@@ -1,267 +1,312 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import Layout from '@/components/Layout';
 import { motion, useInView } from 'framer-motion';
 import { useAppStore } from '@/store';
 import { translations } from '@/lib/translations';
-import { getAssetUrl } from '@/lib/api';
 import {
-  FiUsers, FiAward, FiMail, FiLinkedin,
-  FiArrowRight, FiCheckCircle, FiShield
+  FiPhone, FiMail, FiArrowRight, FiCheckCircle
 } from 'react-icons/fi';
-import { FaWhatsapp, FaLeaf, FaSeedling } from 'react-icons/fa';
+import { FaWhatsapp, FaLeaf } from 'react-icons/fa';
 import Link from 'next/link';
-import { useApi } from '@/hooks/useApi';
+import Image from 'next/image';
 
-/* ── Floating ambient orb ──────────────────────────────────── */
+/* ── Floating ambient orb (opacity only to prevent mobile vibration) ── */
 function Orb({ className }: { className: string }) {
   return (
     <motion.div
       className={`absolute rounded-full blur-[80px] pointer-events-none select-none max-w-full ${className}`}
-      animate={{ opacity: [0.4, 0.7, 0.4] }}
+      animate={{ opacity: [0.35, 0.65, 0.35] }}
       transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
     />
   );
 }
 
 /* ── Scroll-triggered reveal ───────────────────────────────── */
-function Reveal({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string; }) {
+function Reveal({ children, delay = 0, className = "" }: {
+  children: React.ReactNode;
+  delay?: number;
+  className?: string;
+}) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "0px" });
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }} className={className}>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 24 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      className={className}
+    >
       {children}
     </motion.div>
   );
 }
 
-const defaultTeamMembers = [
+/* ── Real Executive Team ───────────────────────────────────── */
+const teamMembers = [
   {
     id: 1,
-    name_en: "Eng. Sultan Abdel-Rahman",
-    name_ar: "م. سلطان عبد الرحمن",
-    position_en: "Executive Chairman & Founder",
-    position_ar: "رئيس مجلس الإدارة والمؤسس",
-    bio_en: "Over 30 years pioneering organic medicinal herb cultivation across Egypt's Nile basin. Champions direct contract farming and farmer equity in Beni Suef.",
-    bio_ar: "أكثر من 30 عاماً من الريادة في زراعة وتصدير الأعشاب الطبية العضوية في حوض النيل. قاد تأسيس الزراعات التعاقدية ودعم مزارعي بني سويف.",
+    name_en: "Soltan Samy",
+    name_ar: "سلطان سامي",
+    position_en: "Chief Executive Officer & Founder",
+    position_ar: "الرئيس التنفيذي والمؤسس",
+    badge_en: "Executive Leadership",
+    badge_ar: "القيادة التنفيذية",
+    role_tag_en: "CEO",
+    role_tag_ar: "الرئيس التنفيذي",
+    bio_en: "Pioneering the export of premium Egyptian organic herbs and botanicals to international markets. Leading GREEN HERBS EG's global trade relations, contract farming standards in Beni Suef, and long-term partnerships across Europe, North America, and the Gulf.",
+    bio_ar: "يقود استراتيجية تصدير أجود الأعشاب والنباتات الطبية المصرية إلى الأسواق العالمية. يشرف على الشراكات الدولية وتطبيق أعلى معايير الزراعة التعاقدية في بني سويف وعقود التوريد المباشرة لأوروبا وأمريكا الشمالية ودول الخليج.",
+    phone: "+20 102 389 1035",
+    phone_clean: "201023891035",
     email: "ceo@greenherbseg.com",
-    phone: "+201023891035",
-    specialty: "Agronomic Heritage & Global Partnerships",
+    photo: "/images/team/Soltan_Samy.jpeg",
+    photoFocus: "object-[center_18%]",
+    specialty_en: "Strategic Partnerships & Global Herb Export",
+    specialty_ar: "الشراكات الدولية والاستراتيجية وتصدير الأعشاب الطبية",
+    stats: [
+      { val: "25+", en: "Years Experience", ar: "عاماً من الخبرة" },
+      { val: "30+", en: "Export Countries", ar: "دولة مستوردة" },
+    ]
   },
   {
     id: 2,
-    name_en: "Dr. Mostafa El-Husseiny",
-    name_ar: "د. مصطفى الحسيني",
-    position_en: "Head of Agronomy & Organic Soil Science",
-    position_ar: "رئيس قسم التغذية الزراعية والتربة العضوية",
-    bio_en: "PhD in Botanical Plant Sciences. Supervises organic crop cycles, biological pest prevention, and regenerative Nile alluvial soil stewardship.",
-    bio_ar: "دكتوراه في علوم النباتات الطبية. يشرف على دورات الزراعة العضوية، والمكافحة الحيوية للآفات، وخصوبة تربة طمي النيل المتجددة.",
-    email: "agronomy@greenherbseg.com",
-    phone: "+201278201346",
-    specialty: "Soil Biology & Organic Non-GMO Seed Bank",
-  },
-  {
-    id: 3,
-    name_en: "Eng. Sarah Mansour",
-    name_ar: "م. سارة منصور",
-    position_en: "Director of Quality Control & GC-MS Lab",
-    position_ar: "مديرة مراقبة الجودة ومختبر التحليل الكروماتوغرافي",
-    bio_en: "Leads our ISO 17025 accredited analytical facility. Specializes in gas chromatography volatile oil profiling and EU pesticide residue screening.",
-    bio_ar: "تقود مختبر الفحص الكيميائي والميكروبي. متخصصة في تحليل نسب الزيوت الطيارة بالكروماتوغرافيا ومطابقة شروط الاتحاد الأوروبي.",
-    email: "qa@greenherbseg.com",
-    phone: "+201278201346",
-    specialty: "GC-MS Chromatography & Food Safety",
-  },
-  {
-    id: 4,
-    name_en: "Ahmed Radwan",
-    name_ar: "أحمد رضوان",
-    position_en: "VP of Global Logistics & Ocean Freight",
-    position_ar: "نائب رئيس قطاع اللوجستيات والشحن البحري",
-    bio_en: "Oversees direct ocean container sailings from Alexandria and Damietta ports. Expert in international Incoterms, phytosanitary seals, and customs release.",
-    bio_ar: "يشرف على شحن الحاويات البحرية عبر موانئ الإسكندرية ودمياط. خبير في اللوائح التجارية الدولية، والإفراج الصحي النباتي، والشحن البحري.",
-    email: "logistics@greenherbseg.com",
-    phone: "+201278201346",
-    specialty: "Ocean Freight & Customs Fast-Track",
+    name_en: "Ahmed Samy",
+    name_ar: "أحمد سامي",
+    position_en: "Head of International Sales",
+    position_ar: "رئيس قطاع المبيعات والتصدير",
+    badge_en: "Global Trade Desk",
+    badge_ar: "قطاع التصدير والمبيعات",
+    role_tag_en: "Head of Sales",
+    role_tag_ar: "رئيس المبيعات",
+    bio_en: "Direct point of contact for international buyers, importers, and food processors worldwide. Directing global quotations, container bookings, custom harvest allocations, and end-to-end client satisfaction from inquiry to ocean delivery.",
+    bio_ar: "نقطة الاتصال المباشرة مع المستوردين العالميين وكبرى شركات الصناعات الغذائية والدوائية. يدير عروض الأسعار الدولية، وتجهيز الحاويات وشحنات المواسم، وضمان أسرع استجابة وتواصل على مدار الساعة.",
+    phone: "+20 127 820 1346",
+    phone_clean: "201278201346",
+    email: "sales@greenherbseg.com",
+    photo: "/images/team/Ahmed_Samy.jpeg",
+    photoFocus: "object-[center_11%]",
+    specialty_en: "Client Negotiations, Fast Quotations & Order Delivery",
+    specialty_ar: "التفاوض التجاري، عروض الأسعار السريعة ومتابعة الشحنات",
+    stats: [
+      { val: "24/7", en: "Sales Desk Support", ar: "دعم مستمر للمبيعات" },
+      { val: "100%", en: "Order Fulfillment", ar: "التزام بتسليم الشحنات" },
+    ]
   },
 ];
 
+/* ══════════════════════════════════════════════════════════════
+   Team Page Component
+════════════════════════════════════════════════════════════════ */
 const Team = () => {
   const { language } = useAppStore();
   const t = translations[language];
   const isEn = language === 'en';
-  
-  const { teamMembers, loading: apiLoading, fetchTeamMembers } = useApi();
-
-  useEffect(() => {
-    if (teamMembers.length === 0) {
-      fetchTeamMembers();
-    }
-  }, [teamMembers.length]);
-
-  const displayedTeam = teamMembers.length > 0 ? teamMembers : defaultTeamMembers;
 
   return (
-    <Layout title={t.nav.team}>
-      
+    <Layout title={isEn ? "Executive Team • GREEN HERBS EG" : "فريق القيادة • جرين هيربس إيجيبت"}>
+
       {/* ══════════════════════════════════════════════════════
-          §1  HERO — Agricultural & Export Leadership
+          HERO SECTION
       ════════════════════════════════════════════════════ */}
-      <section className={`relative pt-36 sm:pt-40 pb-20 sm:pb-24 overflow-hidden bg-[#07130E] text-white ${isEn ? "" : "rtl"}`}>
-        <Orb className="w-[600px] h-[600px] bg-secondary/20 top-[-100px] left-[-100px]" />
-        <Orb className="w-[500px] h-[500px] bg-primary/25 bottom-[-100px] right-[-100px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_0%,rgba(76,175,80,0.22),transparent_100%)] pointer-events-none" />
+      <section
+        className={`relative pt-36 sm:pt-44 pb-20 sm:pb-28 overflow-hidden bg-[#07130E] text-white ${isEn ? "" : "rtl"}`}
+      >
+        <Orb className="w-[600px] h-[600px] bg-emerald-500/20 top-[-100px] left-[-100px]" />
+        <Orb className="w-[500px] h-[500px] bg-green-400/15 bottom-[-80px] right-[-80px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(76,175,80,0.22),transparent_100%)] pointer-events-none" />
 
         <div className="relative z-10 max-w-[1360px] mx-auto px-6 lg:px-12 w-full text-center flex flex-col items-center">
-          
+
+          {/* Top Badge */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 dark:bg-white/5 backdrop-blur-md border border-white/15 shadow-xl mb-6 ring-1 ring-emerald-400/20"
+            className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-xl mb-6 ring-1 ring-emerald-400/20"
           >
             <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse" />
-            <span className="font-label-sm text-[11px] tracking-[0.2em] text-emerald-300 uppercase font-bold">
-              {isEn ? "Agronomic & Trade Leadership • Beni Suef, Egypt" : "القيادة الزراعية والتصديرية • بني سويف، مصر"}
+            <span className="text-[11px] tracking-[0.2em] text-emerald-300 uppercase font-bold">
+              {isEn ? "Direct Executive Access • Beni Suef, Egypt" : "تواصل مباشر مع الإدارة • بني سويف، مصر"}
             </span>
           </motion.div>
 
+          {/* Heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 25 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-headline-lg text-[40px] sm:text-[60px] lg:text-[72px] font-extrabold text-white leading-[1.08] tracking-tight mb-6 max-w-4xl"
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-[36px] sm:text-[54px] lg:text-[68px] font-extrabold text-white leading-[1.12] tracking-tight mb-6 max-w-4xl"
           >
             {isEn ? (
               <>
-                The Agronomists & <br className="hidden sm:inline" />
+                Executive Leadership & <br className="hidden sm:inline" />
                 <span className="bg-gradient-to-r from-emerald-400 via-green-300 to-[#81c784] bg-clip-text text-transparent">
-                  Export Trade Leadership
+                  International Trade Desk
                 </span>
               </>
             ) : (
               <>
-                الخبراء الزراعيون <br className="hidden sm:inline" />
+                القيادة التنفيذية <br className="hidden sm:inline" />
                 <span className="bg-gradient-to-r from-emerald-400 via-green-300 to-[#81c784] bg-clip-text text-transparent">
-                  وفريق قيادة التجارة الدولية
+                  وقطاع التجارة الدولية
                 </span>
               </>
             )}
           </motion.h1>
 
+          {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white/85 text-[17px] sm:text-[20px] leading-relaxed max-w-3xl mb-12 font-body-lg"
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-white/80 text-[16px] sm:text-[19px] leading-relaxed max-w-2xl mb-10"
           >
             {isEn
-              ? "Meet the agronomists, quality assurance scientists, and ocean freight specialists who ensure every GREEN HERBS EG botanical shipment represents the gold standard of Egyptian exports."
-              : "تعرف على مهندسي الزراعة العضوية، وعلماء الجودة المعملية، وخبراء الملاحة البحرية الذين يضمنون خروج كل شحنة بأعلى معايير التميز المصري إلى أسواق العالم."}
+              ? "Connect directly with GREEN HERBS EG decision makers. We prioritize transparent communication, swift contract finalization, and dedicated customer care."
+              : "تواصل مباشرةً مع أصحاب القرار في جرين هيربس إيجيبت. نضمن لكم شفافية كاملة، وسرعة في إبرام عقود التصدير، ومتابعة فورية على مدار الساعة."}
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl"
-          >
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <div className="text-emerald-400 font-extrabold text-2xl font-headline-sm">25+ Yrs</div>
-              <div className="text-white/70 text-xs uppercase tracking-wider font-semibold mt-1">
-                {isEn ? "Agricultural Heritage" : "خبرة زراعية متوارثة"}
-              </div>
-            </div>
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <div className="text-emerald-400 font-extrabold text-2xl font-headline-sm">100%</div>
-              <div className="text-white/70 text-xs uppercase tracking-wider font-semibold mt-1">
-                {isEn ? "Direct Farm Oversight" : "إشراف حقلي مباشر"}
-              </div>
-            </div>
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <div className="text-emerald-400 font-extrabold text-2xl font-headline-sm">ISO 17025</div>
-              <div className="text-white/70 text-xs uppercase tracking-wider font-semibold mt-1">
-                {isEn ? "In-House QA Lab" : "مختبر جودة معتمد"}
-              </div>
-            </div>
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <div className="text-emerald-400 font-extrabold text-2xl font-headline-sm">24/7</div>
-              <div className="text-white/70 text-xs uppercase tracking-wider font-semibold mt-1">
-                {isEn ? "Global Trade Desk" : "مكتب تصدير دائم"}
-              </div>
-            </div>
-          </motion.div>
 
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          §2  LEADERSHIP DIRECTORY GRID
+          EXECUTIVE CARDS SHOWCASE (REFINED UI/UX)
       ════════════════════════════════════════════════════ */}
-      <section className={`relative w-full bg-background py-24 sm:py-32 overflow-hidden ${isEn ? "" : "rtl"}`}>
-        <Orb className="w-[700px] h-[700px] bg-secondary/10 top-0 right-0" />
-        <Orb className="w-[600px] h-[600px] bg-primary/5 bottom-0 left-0" />
+      <section className={`relative w-full bg-[#050e0a] py-20 sm:py-28 overflow-hidden ${isEn ? "" : "rtl"}`}>
+        <Orb className="w-[700px] h-[700px] bg-emerald-600/10 top-1/4 right-[-10%]" />
+        <Orb className="w-[600px] h-[600px] bg-green-500/10 bottom-0 left-[-10%]" />
 
-        <div className="max-w-[1360px] mx-auto px-6 lg:px-12 relative z-10">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {displayedTeam.map((member: any, i: number) => {
-              const memberName = isEn ? (member.name_en || member.name) : (member.name_ar || member.name);
-              const memberRole = isEn ? (member.position_en || member.role) : (member.position_ar || member.role);
-              const memberBio = isEn ? (member.bio_en || member.bio) : (member.bio_ar || member.bio);
+        <div className="max-w-[1240px] mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+            {teamMembers.map((member, i) => {
+              const memberName = isEn ? member.name_en : member.name_ar;
+              const memberPosition = isEn ? member.position_en : member.position_ar;
+              const memberBadge = isEn ? member.badge_en : member.badge_ar;
+              const memberRoleTag = isEn ? member.role_tag_en : member.role_tag_ar;
+              const memberBio = isEn ? member.bio_en : member.bio_ar;
+              const memberSpecialty = isEn ? member.specialty_en : member.specialty_ar;
 
               return (
-                <Reveal key={member.id || i} delay={i * 0.1}>
-                  <div className="rounded-[36px] p-8 sm:p-10 bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-white/60 dark:border-white/10 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full group hover:-translate-y-1">
-                    
-                    <div>
-                      <div className="flex items-center gap-5 mb-6">
-                        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-3xl font-extrabold shadow-md shrink-0">
-                          {memberName?.charAt(0) || "G"}
-                        </div>
-                        <div>
-                          <span className="inline-block px-3 py-1 rounded-full bg-secondary/15 text-secondary font-label-sm text-[11px] font-bold uppercase tracking-wider mb-1.5">
-                            {memberRole}
+                <Reveal key={member.id} delay={i * 0.15}>
+                  <div className="group relative rounded-[32px] overflow-hidden bg-[#0A1A13]/90 border border-emerald-500/25 shadow-2xl hover:border-emerald-400/50 transition-all duration-500 hover:-translate-y-1.5 flex flex-col h-full">
+
+                    {/* ── CARD TOP: Large Executive Portrait Header ── */}
+                    <div className="relative w-full h-[380px] sm:h-[420px] bg-[#07130E] overflow-hidden">
+                      <Image
+                        src={member.photo}
+                        alt={memberName}
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 600px"
+                        className={`object-cover ${member.photoFocus} transition-transform duration-700 group-hover:scale-105`}
+                      />
+
+                      {/* Top status bar badge */}
+                      <div className="absolute top-5 inset-x-5 flex items-center justify-between z-10 pointer-events-none">
+                        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-emerald-300 text-[11px] font-bold uppercase tracking-wider shadow-lg">
+                          <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                          <span>{memberRoleTag}</span>
+                        </span>
+
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-950/70 backdrop-blur-md border border-emerald-500/30 text-emerald-200 text-[11px] font-semibold">
+                          <FiCheckCircle className="w-3.5 h-3.5 text-emerald-400" />
+                          <span>{memberBadge}</span>
+                        </span>
+                      </div>
+
+                      {/* Bottom Gradient Fade */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A1A13] via-[#0A1A13]/40 to-transparent pointer-events-none" />
+
+                      {/* Overlay Title on photo base */}
+                      <div className="absolute bottom-4 inset-x-6 z-10">
+                        <h2 className="text-[28px] sm:text-[34px] font-extrabold text-white leading-tight drop-shadow-md">
+                          {memberName}
+                        </h2>
+                        <p className="text-emerald-400 text-[14px] sm:text-[15px] font-semibold mt-1">
+                          {memberPosition}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* ── CARD BODY: Bio, Focus & Stats ── */}
+                    <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+
+                      <div>
+                        {/* Bio text */}
+                        <p className="text-white/80 text-[14px] sm:text-[15px] leading-relaxed mb-6 font-normal">
+                          {memberBio}
+                        </p>
+
+                        {/* Core Focus Block */}
+                        <div className="p-4 rounded-2xl bg-white/[0.03] border border-emerald-500/15 mb-6">
+                          <span className="text-emerald-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider block mb-1">
+                            {isEn ? "Core Specialty & Focus" : "مجال التخصص والمسؤولية"}
                           </span>
-                          <h3 className="font-headline-sm text-[24px] font-bold text-primary group-hover:text-secondary transition-colors">
-                            {memberName}
-                          </h3>
+                          <span className="text-white/95 text-[13px] sm:text-[14px] font-medium leading-snug block">
+                            {memberSpecialty}
+                          </span>
+                        </div>
+
+                        {/* Quick Stats Pill Row */}
+                        <div className="grid grid-cols-2 gap-3 mb-6">
+                          {member.stats.map((st, idx) => (
+                            <div key={idx} className="p-3 rounded-xl bg-white/[0.02] border border-white/5 text-center">
+                              <span className="text-emerald-400 font-extrabold text-lg sm:text-xl block">
+                                {st.val}
+                              </span>
+                              <span className="text-white/60 text-[11px] uppercase tracking-wider font-medium block mt-0.5">
+                                {isEn ? st.en : st.ar}
+                              </span>
+                            </div>
+                          ))}
                         </div>
                       </div>
 
-                      <p className="font-body-md text-[15px] text-on-surface-variant leading-relaxed mb-6">
-                        {memberBio}
-                      </p>
+                      {/* ── CARD FOOTER: Premium Contact Buttons ── */}
+                      <div className="pt-6 border-t border-emerald-500/20 space-y-3">
 
-                      {member.specialty && (
-                        <div className="p-3.5 rounded-2xl bg-surface-container-low/70 border border-outline-variant/30 text-xs mb-6">
-                          <strong className="text-secondary text-[11px] uppercase tracking-wider block mb-0.5">
-                            {isEn ? "Core Focus:" : "مجال التخصص:"}
-                          </strong>
-                          <span className="text-primary font-medium">{member.specialty}</span>
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="pt-6 border-t border-outline-variant/30 flex items-center justify-between gap-4 mt-auto">
-                      {member.email && (
+                        {/* 1. Primary Action: WhatsApp Direct Button (Full width) */}
                         <a
-                          href={`mailto:${member.email}`}
-                          className="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-1.5"
+                          href={`https://wa.me/${member.phone_clean}?text=${encodeURIComponent(
+                            isEn
+                              ? `Hello ${member.name_en}, I would like to inquire about GREEN HERBS EG products.`
+                              : `مرحباً ${member.name_ar}، أود الاستفسار عن منتجات وتصدير جرين هيربس إيجيبت.`
+                          )}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="w-full flex items-center justify-center gap-3 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#25D366] to-[#1ebe5d] hover:from-[#20ba59] hover:to-[#179b4a] text-white font-bold text-[14px] shadow-lg shadow-emerald-950/50 hover:shadow-emerald-500/30 transition-all duration-300"
                         >
-                          <FiMail className="w-4 h-4 text-secondary" />
-                          <span>{member.email}</span>
+                          <FaWhatsapp className="w-5 h-5 text-white shrink-0" />
+                          <span>{isEn ? `Chat on WhatsApp` : `تواصل عبر واتساب مباشرة`}</span>
+                          <span className="opacity-80 text-xs" dir="ltr">({member.phone})</span>
                         </a>
-                      )}
 
-                      <a
-                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello GREEN HERBS EG, I would like to connect with ${member.name_en || member.name}.`)}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="px-4 py-2 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm"
-                      >
-                        <FaWhatsapp className="w-3.5 h-3.5" />
-                        <span>{isEn ? "Direct Chat" : "محادثة"}</span>
-                      </a>
+                        {/* 2. Secondary Actions Grid: Call & Email */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+                          {/* Direct Phone Call */}
+                          <a
+                            href={`tel:${member.phone.replace(/\s+/g, '')}`}
+                            className="flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 hover:border-emerald-400/40 text-white text-[13px] font-semibold transition-all group/btn"
+                          >
+                            <FiPhone className="w-4 h-4 text-emerald-400 group-hover/btn:scale-110 transition-transform shrink-0" />
+                            <span dir="ltr" className="tracking-wide">{member.phone}</span>
+                          </a>
+
+                          {/* Direct Email */}
+                          <a
+                            href={`mailto:${member.email}`}
+                            className="flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 hover:border-emerald-400/40 text-white text-[13px] font-semibold transition-all group/btn"
+                          >
+                            <FiMail className="w-4 h-4 text-emerald-400 group-hover/btn:scale-110 transition-transform shrink-0" />
+                            <span className="truncate">{member.email}</span>
+                          </a>
+
+                        </div>
+
+                      </div>
+
                     </div>
 
                   </div>
@@ -274,38 +319,46 @@ const Team = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          §3  CONNECT WITH OUR EXPORT BOARD CTA
+          BOTTOM CTA SECTION
       ════════════════════════════════════════════════════ */}
-      <section className={`relative py-24 bg-surface-container/60 border-t border-outline-variant/30 ${isEn ? "" : "rtl"}`}>
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12 text-center">
-          <div className="rounded-[40px] bg-gradient-to-br from-white/90 to-surface-container/70 dark:from-white/10 dark:to-white/5 backdrop-blur-2xl border border-white/60 dark:border-white/10 p-12 lg:p-16 shadow-2xl">
-            <span className="font-label-sm text-[11px] font-bold tracking-widest text-secondary uppercase mb-4 block">
-              {isEn ? "Executive Consultation" : "استشارة مباشرة مع الإدارة"}
+      <section className={`relative py-24 bg-[#07130E] border-t border-emerald-500/20 ${isEn ? "" : "rtl"}`}>
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-12 text-center">
+          <div className="rounded-[36px] bg-gradient-to-br from-[#0c2219] to-[#07130E] border border-emerald-500/30 p-10 sm:p-14 lg:p-16 shadow-2xl">
+
+            <div className="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto mb-6">
+              <FaLeaf className="w-7 h-7 text-emerald-400" />
+            </div>
+
+            <span className="text-[11px] font-bold tracking-widest text-emerald-400 uppercase mb-3 block">
+              {isEn ? "Direct Export Assistance" : "تواصل مباشر مع المصنع"}
             </span>
-            <h2 className="font-headline-lg text-[32px] sm:text-[46px] font-bold text-primary tracking-tight mb-6">
-              {isEn ? "Schedule a Strategic Meeting with Our Trade Directors" : "احجز اجتماعاً استراتيجياً مع مسؤولي التصدير والإدارة"}
-            </h2>
-            <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+            <h3 className="text-[26px] sm:text-[38px] font-extrabold text-white tracking-tight mb-4 leading-tight">
               {isEn
-                ? "Discuss long-term contract cultivation, annual volume allocations, private label packaging, and exclusive seasonal harvest commitments."
-                : "ناقش عقود التوريد السنوية طويلة الأجل، وحصص الإنتاج المخصصة لشركتكم، والتعبئة الخاصة بأسعار ثابتة للموسم."}
+                ? "Looking for Custom Specifications or Bulk Orders?"
+                : "هل تبحث عن مواصفات تصديرية خاصة أو طلبيات كبرى؟"}
+            </h3>
+            <p className="text-[15px] sm:text-[17px] text-white/75 max-w-2xl mx-auto mb-8 leading-relaxed">
+              {isEn
+                ? "Our team provides certificate-backed samples, real-time crop pricing, and flexible shipment schedules tailored to your port of destination."
+                : "يقدم فريقنا عينات موثقة بالتحاليل المخبرية، وأسعاراً فورية للمحاصيل، وجداول شحن مرنة بحسب ميناء الوصول الخاص بكم."}
             </p>
+
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="btn-shine inline-flex items-center justify-center gap-3 px-9 py-4 rounded-full bg-primary text-white font-label-sm text-[13px] font-bold uppercase tracking-widest hover:bg-secondary transition-all shadow-xl"
+                className="inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-[13px] uppercase tracking-wider transition-all shadow-lg shadow-emerald-500/20"
               >
-                <span>{isEn ? "Contact Export Office" : "تواصل مع مكتب الإدارة"}</span>
+                <span>{isEn ? "Official Inquiry Form" : "نموذج طلب عرض أسعار"}</span>
                 <FiArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/201278201346?text=Hello%20Green%20Globe%20Herbs,%20I%20would%20like%20to%20schedule%20a%20meeting%20with%20your%20directors."
+                href="https://wa.me/201278201346?text=Hello%20GREEN%20HERBS%20EG,%20I%20would%20like%20to%20request%20a%20quotation."
                 target="_blank"
                 rel="noreferrer"
-                className="whatsapp-glow inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25D366] text-white font-label-sm text-[13px] font-bold uppercase tracking-widest transition-all shadow-md"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-[13px] uppercase tracking-wider transition-all shadow-md"
               >
                 <FaWhatsapp className="w-5 h-5" />
-                <span>{isEn ? "WhatsApp Chairman Office" : "واتساب مكتب رئيس مجلس الإدارة"}</span>
+                <span>{isEn ? "WhatsApp Export Desk" : "واتساب مكتب التصدير"}</span>
               </a>
             </div>
           </div>
