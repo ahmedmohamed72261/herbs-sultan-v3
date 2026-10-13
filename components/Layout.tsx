@@ -13,20 +13,20 @@ interface LayoutProps {
 }
 
 const Layout = ({ children, title, description }: LayoutProps) => {
-  const defaultTitle = 'Green Globe Herbs — Premium Organic Herbs & Spices Exporter';
-  const defaultDescription = 'Green Globe Herbs is a leading Egyptian exporter of organic medicinal herbs, spices, legumes, and seeds to global markets. Sourced from sustainable farms.';
+  const defaultTitle = 'GREEN HERBS EG — Premium Organic Herbs & Spices Exporter';
+  const defaultDescription = 'GREEN HERBS EG is a leading Egyptian exporter of organic medicinal herbs, spices, legumes, and seeds to global markets. Sourced from sustainable farms.';
 
   return (
     <>
       <Head>
-        <title>{title ? `${title} | Green Globe Herbs` : defaultTitle}</title>
+        <title>{title ? `${title} | GREEN HERBS EG` : defaultTitle}</title>
         <meta name="description" content={description || defaultDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/images/logo.png" />
         <link rel="shortcut icon" href="/images/logo.png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
         <meta property="og:image" content="/images/logo.png" />
-        <meta property="og:image:alt" content="Green Globe Herbs" />
+        <meta property="og:image:alt" content="GREEN HERBS EG" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/images/logo.png" />
       </Head>

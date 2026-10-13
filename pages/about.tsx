@@ -137,7 +137,7 @@ const About = () => {
       ════════════════════════════════════════════════════ */}
       <section className={`relative h-[62vh] min-h-[480px] flex flex-col justify-center overflow-hidden ${isEn ? "" : "rtl"}`}>
         <div className="absolute inset-0 z-0">
-          <img src="/images/about.jpg" alt="About Green Globe Herbs" className="w-full h-full object-cover" />
+          <img src="/images/about.jpg" alt="About GREEN HERBS EG" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-[#07130E]/90" />
         </div>
 
@@ -322,7 +322,7 @@ const About = () => {
             <Reveal delay={0.3}>
               <Link href="/contact"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary text-surface font-label-sm text-[13px] font-bold tracking-widest uppercase hover:bg-secondary transition-colors shadow-xl btn-shine">
-                {isEn ? "Partner With Green Globe Herbs" : "كن شريكاً لجرين جلوب للأعشاب"}
+                {isEn ? "Partner With GREEN HERBS EG" : "كن شريكاً لجرين هيربس إيجيبت"}
               </Link>
             </Reveal>
           </div>

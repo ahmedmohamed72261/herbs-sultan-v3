@@ -159,7 +159,7 @@ const Certificates = () => {
             className="text-white/85 text-[17px] sm:text-[20px] leading-relaxed max-w-3xl mb-12 font-body-lg"
           >
             {isEn
-              ? "Every botanical batch exported by Green Globe Herbs is governed by rigorous international standards: ISO 22000, HACCP, USDA Organic, EU Organic, and US FDA facility registration with exhaustive Certificate of Analysis (COA) logs."
+              ? "Every botanical batch exported by GREEN HERBS EG is governed by rigorous international standards: ISO 22000, HACCP, USDA Organic, EU Organic, and US FDA facility registration with exhaustive Certificate of Analysis (COA) logs."
               : "تخضع كل شحنة نصدرها لأعلى معايير الرقابة الصارمة عالمياً: الآيزو 22000، والهاسب، والعضوية الأمريكية والأوروبية، وتسجيل الـ FDA الأمريكي مع شهادات فحص وتحليل معملي كاملة."}
           </motion.p>
 

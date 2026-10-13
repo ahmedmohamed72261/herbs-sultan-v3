@@ -192,8 +192,8 @@ export default function Home() {
     {
       name: "Dr. Markus Schneider",
       role: isEn ? "Procurement Director • Kräuter & Tee GmbH, Germany" : "مدير المشتريات • كرويتر أند تي، ألمانيا",
-      text_en: "Green Globe Herbs has been our trusted Egyptian botanical supplier for 5+ years. Their peppermint and chamomile consistently meet the strictest EU pesticide limits.",
-      text_ar: "جرين جلوب شريكنا الاستراتيجي في مصر منذ أكثر من 5 سنوات. جودة النعناع والبابونج دائماً مطابقة لأدق معايير الاتحاد الأوروبي.",
+      text_en: "GREEN HERBS EG has been our trusted Egyptian botanical supplier for 5+ years. Their peppermint and chamomile consistently meet the strictest EU pesticide limits.",
+      text_ar: "جرين هيربس إيجيبت شريكنا الاستراتيجي في مصر منذ أكثر من 5 سنوات. جودة النعناع والبابونج دائماً مطابقة لأدق معايير الاتحاد الأوروبي.",
     },
     {
       name: "Elena Rostova",
@@ -204,8 +204,8 @@ export default function Home() {
     {
       name: "Tariq Al-Mansoor",
       role: isEn ? "VP Supply Chain • Royal Botanical Blends, UAE" : "نائب رئيس سلاسل الإمداد • رويال بليندز، الإمارات",
-      text_en: "Outstanding hibiscus calyces and pristine multi-ply kraft sack packaging. Green Globe Herbs represents the gold standard of Egyptian agricultural exports.",
-      text_ar: "زهور كركديه فاخرة وتعبئة محكمة في أكياس كرافت متعددة الطبقات. جرين جلوب تمثل المعيار الذهبي للصادرات الزراعية المصرية.",
+      text_en: "Outstanding hibiscus calyces and pristine multi-ply kraft sack packaging. GREEN HERBS EG represents the gold standard of Egyptian agricultural exports.",
+      text_ar: "زهور كركديه فاخرة وتعبئة محكمة في أكياس كرافت متعددة الطبقات. جرين هيربس إيجيبت تمثل المعيار الذهبي للصادرات الزراعية المصرية.",
     },
   ], [isEn]);
 
@@ -430,7 +430,7 @@ export default function Home() {
                 className="flex flex-wrap items-center gap-3 mb-12"
               >
                 <a
-                  href={`https://wa.me/201278201346?text=${encodeURIComponent("Hello Green Globe Herbs, I would like to inquire about your bulk export botanical catalog.")}`}
+                  href={`https://wa.me/201278201346?text=${encodeURIComponent("Hello GREEN HERBS EG, I would like to inquire about your bulk export botanical catalog.")}`}
                   target="_blank" rel="noreferrer"
                   className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bc5b] text-white font-bold text-[13px] uppercase tracking-wider transition-all shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] hover:-translate-y-0.5"
                 >
@@ -879,7 +879,7 @@ export default function Home() {
                 : "تواصل مع مكتب التصدير للحصول على المواصفات المعتمدة وعينات COA وعروض أسعار تنافسية."}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href={`https://wa.me/201278201346?text=${encodeURIComponent("Hello Green Globe Herbs, I would like to start a trade inquiry.")}`}
+              <a href={`https://wa.me/201278201346?text=${encodeURIComponent("Hello GREEN HERBS EG, I would like to start a trade inquiry.")}`}
                 target="_blank" rel="noopener noreferrer"
                 className="whatsapp-glow inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white font-label-sm text-[13px] font-bold uppercase tracking-widest transition-all shadow-xl w-full sm:w-auto">
                 <FaWhatsapp className="w-5 h-5" />

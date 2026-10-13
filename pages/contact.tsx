@@ -88,8 +88,8 @@ const Contact = () => {
     {
       icon: FiMail,
       title: isEn ? "Sales Email" : "البريد الإلكتروني",
-      content: "sales@greenglobeherbs.com",
-      action: "mailto:sales@greenglobeherbs.com",
+      content: "sales@greenherbseg.com",
+      action: "mailto:sales@greenherbseg.com",
       actionText: isEn ? "Send Email" : "إرسال بريد",
     },
     {
@@ -149,7 +149,7 @@ const Contact = () => {
       ════════════════════════════════════════════════════ */}
       <section className={`relative h-[48vh] min-h-[420px] flex flex-col justify-center overflow-hidden ${isEn ? "" : "rtl"}`}>
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-section.jpg" alt="Contact Green Globe Herbs" className="w-full h-full object-cover" />
+          <img src="/images/hero-section.jpg" alt="Contact GREEN HERBS EG" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#07130E]/90 backdrop-blur-[2px]" />
         </div>
         <div className="relative z-10 max-w-[1240px] mx-auto px-6 lg:px-12 w-full text-center flex flex-col items-center mt-20">
@@ -266,7 +266,7 @@ const Contact = () => {
                     <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="p-10 text-center rounded-[32px] bg-secondary/10 border border-secondary/30">
                       <div className="w-16 h-16 mx-auto rounded-full bg-secondary text-white flex items-center justify-center mb-5 shadow-xl"><FiCheckCircle className="w-8 h-8" /></div>
                       <h4 className="font-headline-sm text-[22px] font-bold text-primary mb-2">{isEn ? "Inquiry Received!" : "تم استلام استفسارك بنجاح!"}</h4>
-                      <p className="font-body-md text-on-surface-variant text-sm max-w-md mx-auto">{isEn ? "Thank you for reaching out to Green Globe Herbs. Our export desk has received your request and will contact you shortly." : "شكراً لتواصلك مع جرين جلوب للأعشاب. استلم فريق التصدير رسالتك وسيتم التواصل معك في أقرب وقت."}</p>
+                      <p className="font-body-md text-on-surface-variant text-sm max-w-md mx-auto">{isEn ? "Thank you for reaching out to GREEN HERBS EG. Our export desk has received your request and will contact you shortly." : "شكراً لتواصلك مع جرين هيربس إيجيبت. استلم فريق التصدير رسالتك وسيتم التواصل معك في أقرب وقت."}</p>
                     </motion.div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-5">
@@ -317,7 +317,7 @@ const Contact = () => {
               {isEn ? "Facility & Farms" : "المقر والمزارع"}
             </span>
             <h2 className="font-headline-lg text-[32px] md:text-[46px] text-primary tracking-tight font-bold">
-              {isEn ? "Find Green Globe Herbs" : "موقعنا في بني سويف، مصر"}
+              {isEn ? "Find GREEN HERBS EG" : "موقعنا في بني سويف، مصر"}
             </h2>
             <p className="font-body-md text-[16px] text-on-surface-variant max-w-xl mx-auto mt-2">
               {isEn
@@ -337,7 +337,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-[24px] w-full"
-                title="Green Globe Herbs Location Map"
+                title="GREEN HERBS EG Location Map"
               />
             </div>
           </Reveal>

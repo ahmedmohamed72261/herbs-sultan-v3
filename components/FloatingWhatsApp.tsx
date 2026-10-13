@@ -7,8 +7,8 @@ const WHATSAPP_PHONE = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '201278201346'
 export default function FloatingWhatsApp() {
   const { language } = useAppStore();
   const WHATSAPP_MESSAGE = language === 'en'
-    ? 'Hello Green Globe Herbs, I am interested in your premium herbs and spices products. Could you please share your catalog and wholesale pricing? Thank you.'
-    : 'مرحباً شركة جرين جلوب للأعشاب، أنا مهتم بمنتجاتكم الممتازة من الأعشاب والتوابل. هل يمكنكم مشاركة كتالوج المنتجات وأسعار الجملة؟ شكراً لكم.';
+    ? 'Hello GREEN HERBS EG, I am interested in your premium herbs and spices products. Could you please share your catalog and wholesale pricing? Thank you.'
+    : 'مرحباً شركة جرين هيربس إيجيبت، أنا مهتم بمنتجاتكم الممتازة من الأعشاب والتوابل. هل يمكنكم مشاركة كتالوج المنتجات وأسعار الجملة؟ شكراً لكم.';
   const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
   const positionClass = language === 'ar' ? 'left-4 sm:left-8' : 'right-4 sm:right-8';
 

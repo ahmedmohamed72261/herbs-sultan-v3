@@ -333,7 +333,7 @@ const Export = () => {
                       ? "Get current 20ft / 40ft container rates, insurance, and booking dates for this route."
                       : "احصل على أسعار نولون الحاويات الحالية ومواعيد الحجز والإبحار لهذا الخط."}
                   </p>
-                  <a href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello Green Globe Herbs Freight Desk, I need a CIF shipping quote for: ${globalPortHubs[activePortTab].region}.`)}`}
+                  <a href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello GREEN HERBS EG Freight Desk, I need a CIF shipping quote for: ${globalPortHubs[activePortTab].region}.`)}`}
                     target="_blank" rel="noreferrer"
                     className="w-full py-3 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-[11px] uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all">
                     <FaWhatsapp className="w-4 h-4" />

@@ -136,7 +136,7 @@ export default function AppLoading({ show }: AppLoadingProps) {
             {/* Typography & High-Contrast Progress Line */}
             <div className="flex flex-col items-center gap-3">
               <span className="font-headline-sm text-sm font-black tracking-[0.25em] uppercase text-primary drop-shadow-sm">
-                Green Globe Herbs
+                GREEN HERBS EG
               </span>
 
               {/* Progress Line Track */}

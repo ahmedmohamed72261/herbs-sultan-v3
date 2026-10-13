@@ -97,14 +97,14 @@ const Navbar = () => {
             <div className="relative w-10 h-10 sm:w-13 sm:h-13 md:w-14 md:h-14 shrink-0 rounded-full group-hover:scale-105 transition-all duration-300 drop-shadow-[0_4px_16px_rgba(37,211,102,0.35)] flex items-center justify-center">
               <img
                 src="/images/logo.png"
-                alt="Green Globe Herbs Logo"
+                alt="GREEN HERBS EG Logo"
                 className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">
               <div className="font-extrabold text-[13px] sm:text-[16px] md:text-[17px] text-white tracking-[0.1em] sm:tracking-[0.14em] leading-tight flex items-center gap-1 sm:gap-1.5 font-headline-sm whitespace-nowrap">
-                <span>GREEN GLOBE</span>
-                <span className="text-emerald-400 font-black">HERBS</span>
+                <span>GREEN HERBS</span>
+                <span className="text-emerald-400 font-black">EG</span>
               </div>
               <span className="block text-[8px] sm:text-[9.5px] md:text-[10px] font-bold tracking-[0.16em] sm:tracking-[0.24em] uppercase text-emerald-300/80 leading-none mt-0.5 sm:mt-1 whitespace-nowrap">
                 {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
@@ -247,11 +247,11 @@ const Navbar = () => {
             <div className="flex items-center justify-between pb-6 border-b border-white/15">
               <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full shrink-0 flex items-center justify-center drop-shadow-md">
-                  <img src="/images/logo.png" alt="Green Globe Herbs Logo" className="w-full h-full object-contain" />
+                  <img src="/images/logo.png" alt="GREEN HERBS EG Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <div className="font-extrabold text-white text-base tracking-wider font-headline-sm flex items-center gap-1.5">
-                    <span>GREEN GLOBE</span> <span className="text-emerald-400 font-black">HERBS</span>
+                    <span>GREEN HERBS</span> <span className="text-emerald-400 font-black">EG</span>
                   </div>
                   <span className="text-[9px] font-bold tracking-[0.2em] uppercase text-emerald-300/80 leading-none mt-1">
                     {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
@@ -326,7 +326,7 @@ const Navbar = () => {
             {/* Mobile CTAs */}
             <div className="mt-auto pt-6 space-y-3">
               <a
-                href={`https://wa.me/201278201346?text=${encodeURIComponent('Hello Green Globe Herbs!')}`}
+                href={`https://wa.me/201278201346?text=${encodeURIComponent('Hello GREEN HERBS EG!')}`}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm shadow-lg"

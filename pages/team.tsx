@@ -43,7 +43,7 @@ const defaultTeamMembers = [
     position_ar: "رئيس مجلس الإدارة والمؤسس",
     bio_en: "Over 30 years pioneering organic medicinal herb cultivation across Egypt's Nile basin. Champions direct contract farming and farmer equity in Beni Suef.",
     bio_ar: "أكثر من 30 عاماً من الريادة في زراعة وتصدير الأعشاب الطبية العضوية في حوض النيل. قاد تأسيس الزراعات التعاقدية ودعم مزارعي بني سويف.",
-    email: "ceo@greenglobeherbs.com",
+    email: "ceo@greenherbseg.com",
     phone: "+201023891035",
     specialty: "Agronomic Heritage & Global Partnerships",
   },
@@ -55,7 +55,7 @@ const defaultTeamMembers = [
     position_ar: "رئيس قسم التغذية الزراعية والتربة العضوية",
     bio_en: "PhD in Botanical Plant Sciences. Supervises organic crop cycles, biological pest prevention, and regenerative Nile alluvial soil stewardship.",
     bio_ar: "دكتوراه في علوم النباتات الطبية. يشرف على دورات الزراعة العضوية، والمكافحة الحيوية للآفات، وخصوبة تربة طمي النيل المتجددة.",
-    email: "agronomy@greenglobeherbs.com",
+    email: "agronomy@greenherbseg.com",
     phone: "+201278201346",
     specialty: "Soil Biology & Organic Non-GMO Seed Bank",
   },
@@ -67,7 +67,7 @@ const defaultTeamMembers = [
     position_ar: "مديرة مراقبة الجودة ومختبر التحليل الكروماتوغرافي",
     bio_en: "Leads our ISO 17025 accredited analytical facility. Specializes in gas chromatography volatile oil profiling and EU pesticide residue screening.",
     bio_ar: "تقود مختبر الفحص الكيميائي والميكروبي. متخصصة في تحليل نسب الزيوت الطيارة بالكروماتوغرافيا ومطابقة شروط الاتحاد الأوروبي.",
-    email: "qa@greenglobeherbs.com",
+    email: "qa@greenherbseg.com",
     phone: "+201278201346",
     specialty: "GC-MS Chromatography & Food Safety",
   },
@@ -79,7 +79,7 @@ const defaultTeamMembers = [
     position_ar: "نائب رئيس قطاع اللوجستيات والشحن البحري",
     bio_en: "Oversees direct ocean container sailings from Alexandria and Damietta ports. Expert in international Incoterms, phytosanitary seals, and customs release.",
     bio_ar: "يشرف على شحن الحاويات البحرية عبر موانئ الإسكندرية ودمياط. خبير في اللوائح التجارية الدولية، والإفراج الصحي النباتي، والشحن البحري.",
-    email: "logistics@greenglobeherbs.com",
+    email: "logistics@greenherbseg.com",
     phone: "+201278201346",
     specialty: "Ocean Freight & Customs Fast-Track",
   },
@@ -155,7 +155,7 @@ const Team = () => {
             className="text-white/85 text-[17px] sm:text-[20px] leading-relaxed max-w-3xl mb-12 font-body-lg"
           >
             {isEn
-              ? "Meet the agronomists, quality assurance scientists, and ocean freight specialists who ensure every Green Globe Herbs botanical shipment represents the gold standard of Egyptian exports."
+              ? "Meet the agronomists, quality assurance scientists, and ocean freight specialists who ensure every GREEN HERBS EG botanical shipment represents the gold standard of Egyptian exports."
               : "تعرف على مهندسي الزراعة العضوية، وعلماء الجودة المعملية، وخبراء الملاحة البحرية الذين يضمنون خروج كل شحنة بأعلى معايير التميز المصري إلى أسواق العالم."}
           </motion.p>
 
@@ -254,7 +254,7 @@ const Team = () => {
                       )}
 
                       <a
-                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello Green Globe Herbs, I would like to connect with ${member.name_en || member.name}.`)}`}
+                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello GREEN HERBS EG, I would like to connect with ${member.name_en || member.name}.`)}`}
                         target="_blank"
                         rel="noreferrer"
                         className="px-4 py-2 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm"

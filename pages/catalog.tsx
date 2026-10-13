@@ -37,8 +37,8 @@ function Reveal({ children, delay = 0, className = "" }: { children: React.React
 const defaultCatalogs = [
   {
     id: "catalog-2026",
-    title_en: "Green Globe Herbs • Master Botanical Export Catalog 2026/2027",
-    title_ar: "جرين جلوب للأعشاب • الدليل الشامل لتصدير المحاصيل 2026/2027",
+    title_en: "GREEN HERBS EG • Master Botanical Export Catalog 2026/2027",
+    title_ar: "جرين هيربس إيجيبت • الدليل الشامل لتصدير المحاصيل 2026/2027",
     version: "2026.1",
     pages: "48 Pages (EN/AR)",
     size: "8.4 MB • PDF",
@@ -268,7 +268,7 @@ const CatalogPage = () => {
                     {/* Actions */}
                     <div className="pt-6 border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-4 mt-auto">
                       <a
-                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello Green Globe Herbs, please email or share the complete PDF copy of: ${catTitle}.`)}`}
+                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello GREEN HERBS EG, please email or share the complete PDF copy of: ${catTitle}.`)}`}
                         target="_blank"
                         rel="noreferrer"
                         className="btn-shine inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-primary text-white hover:bg-secondary font-label-sm text-xs font-bold uppercase tracking-wider transition-all shadow-md"
@@ -278,7 +278,7 @@ const CatalogPage = () => {
                       </a>
 
                       <a
-                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello Green Globe Herbs, I would like to request printed samples for: ${catTitle}.`)}`}
+                        href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello GREEN HERBS EG, I would like to request printed samples for: ${catTitle}.`)}`}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors"

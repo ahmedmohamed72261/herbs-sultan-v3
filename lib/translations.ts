@@ -32,16 +32,16 @@ export const translations = {
       noData: 'No data available',
     },
     home: {
-      heroTitle: 'Green Globe Herbs - Organic Herbs & Spices',
+      heroTitle: 'GREEN HERBS EG - Organic Herbs & Spices',
       heroSubtitle: 'Sourced from sustainable farms across Egypt to global markets',
       heroCta: 'Explore Products',
       featuredProducts: 'Our Organic Products',
-      whyChooseUs: 'Why Choose Green Globe Herbs',
+      whyChooseUs: 'Why Choose GREEN HERBS EG',
       testimonials: 'Client Testimonials',
     },
     homePage: {
       heroBadge: 'Certified Organic Botanicals',
-      heroTitleLine1: 'Green Globe Herbs,',
+      heroTitleLine1: 'GREEN HERBS EG,',
       heroTitleLine2: 'Pure Organic Spices & Herbs',
       heroDescription:
         'Discover our premium selection of certified organic medicinal herbs, spices, legumes, and seeds sourced from sustainable Egyptian farms for global export.',
@@ -68,7 +68,7 @@ export const translations = {
       ],
       formulaBadge: 'Trusted Global Exporter',
       formulaDescription:
-        'Green Globe Herbs is a premier exporter of medicinal herbs, legumes, spices, and seeds with an outstanding reputation for purity, competitive pricing, and sustainable farming.',
+        'GREEN HERBS EG is a premier exporter of medicinal herbs, legumes, spices, and seeds with an outstanding reputation for purity, competitive pricing, and sustainable farming.',
       standardsTitle: 'International Certifications',
       standards: ['HACCP Certified', 'ISO 22000', 'Organic Certified', 'EU Compliant', 'FDA Registered'],
       featuredBadge: 'Our Product Categories',
@@ -104,20 +104,20 @@ export const translations = {
       testimonialsBadge: 'Global Partners',
       testimonialsTitle: 'Trusted by Industry Leaders',
       testimonialsDescription:
-        'Food manufacturers, tea blenders, and cosmetic brands worldwide rely on Green Globe Herbs for consistent, premium bulk botanical supplies.',
+        'Food manufacturers, tea blenders, and cosmetic brands worldwide rely on GREEN HERBS EG for consistent, premium bulk botanical supplies.',
       testimonialsItems: [
         {
-          text: 'The quality of their dried herbs and spices is exceptional. Their reliable bulk supply and strict adherence to EU standards make Green Globe Herbs our most valued export partner.',
+          text: 'The quality of their dried herbs and spices is exceptional. Their reliable bulk supply and strict adherence to EU standards make GREEN HERBS EG our most valued export partner.',
           name: 'Michael Chen',
           role: 'Procurement Director, Food & Beverage Corp.',
         },
         {
-          text: 'We source our organic basil, peppermint, and chamomile from Green Globe Herbs. Their processing standards and professional export handling have completely streamlined our supply chain.',
+          text: 'We source our organic basil, peppermint, and chamomile from GREEN HERBS EG. Their processing standards and professional export handling have completely streamlined our supply chain.',
           name: 'Elena Rossi',
           role: 'Head of Sourcing, International Tea Blends',
         },
       ],
-      trustLabel: 'GREEN GLOBE HERBS',
+      trustLabel: 'GREEN HERBS EG',
       faqBadge: 'B2B Export FAQ',
       faqTitle: 'Frequently Asked Questions',
       faqDescription:
@@ -158,7 +158,7 @@ export const translations = {
       storyBadge: 'Company Overview',
       storyTitle: 'Leading Egypt\'s Botanical Export',
       storyDescriptionOne:
-        'Green Globe Herbs is a premier Egyptian supplier, processor, and exporter of high-quality medicinal herbs, spices, seeds, and botanical raw materials. Rooted in Egypt\'s rich agricultural history, we bridge local farming excellence with global industry demands.',
+        'GREEN HERBS EG is a premier Egyptian supplier, processor, and exporter of high-quality medicinal herbs, spices, seeds, and botanical raw materials. Rooted in Egypt\'s rich agricultural history, we bridge local farming excellence with global industry demands.',
       storyDescriptionTwo:
         'With robust processing infrastructure and a commitment to rigorous quality control, we provide reliable bulk supply to the food, tea, pharmaceutical, and cosmetic industries across international markets.',
       stats: [
@@ -176,9 +176,9 @@ export const translations = {
       valuesTitle: 'Our Values',
       valuesDescription:
         'Quality assurance, supply chain transparency, sustainable farming practices, and building long-term B2B partnerships form the foundation of our operations.',
-      whyChooseUsTitle: 'Why Choose Green Globe Herbs?',
+      whyChooseUsTitle: 'Why Choose GREEN HERBS EG?',
       whyChooseUsIntro:
-        'Green Globe Herbs is a trusted supplier and exporter of premium-quality herbs, spices, seeds, and dried flowers, serving customers across international markets. We provide both Organic and Conventional products, supported by strict quality standards, reliable sourcing, and professional export services.\n\nOur mission is to deliver safe, natural, and high-quality agricultural products while building long-term partnerships based on trust, consistency, and customer satisfaction.',
+        'GREEN HERBS EG is a trusted supplier and exporter of premium-quality herbs, spices, seeds, and dried flowers, serving customers across international markets. We provide both Organic and Conventional products, supported by strict quality standards, reliable sourcing, and professional export services.\n\nOur mission is to deliver safe, natural, and high-quality agricultural products while building long-term partnerships based on trust, consistency, and customer satisfaction.',
       whyChooseUsSections: [
         {
           title: 'Organic & Conventional Product Expertise',
@@ -202,7 +202,7 @@ export const translations = {
         },
         {
           title: 'Building Long-Term Partnerships',
-          body: 'At Green Globe Herbs, we believe that successful business is built on trust and long-term cooperation. We work closely with our customers to provide consistent quality, professional service, and reliable support that contributes to their growth and success.',
+          body: 'At GREEN HERBS EG, we believe that successful business is built on trust and long-term cooperation. We work closely with our customers to provide consistent quality, professional service, and reliable support that contributes to their growth and success.',
         },
       ],
       certifications: [
@@ -223,7 +223,7 @@ export const translations = {
         'International Shipping & Logistics Support',
       ],
       whyChooseUsClosing:
-        'At Green Globe Herbs, we believe that successful business is built on trust and long-term cooperation. We work closely with our customers to provide consistent quality, professional service, and reliable support that contributes to their growth and success.',
+        'At GREEN HERBS EG, we believe that successful business is built on trust and long-term cooperation. We work closely with our customers to provide consistent quality, professional service, and reliable support that contributes to their growth and success.',
       whyChooseUsCta: 'Choose a supplier that combines certified quality, global market expertise, reliable sourcing, and uncompromising food safety standards for Organic and Conventional Herbs, Spices, Seeds, and Dried Flowers.',
     },
     products: {
@@ -246,7 +246,7 @@ export const translations = {
     },
     contact: {
       title: 'Contact Us',
-      subtitle: 'Connect with Green Globe Herbs Export Team',
+      subtitle: 'Connect with GREEN HERBS EG Export Team',
       name: 'Your Name / Company',
       email: 'Corporate Email',
       phone: 'Phone Number',
@@ -258,7 +258,7 @@ export const translations = {
       phoneNumber: 'Phone',
       emailAddress: 'Email',
       addressFull: 'Sumusta Al Waqf – Beni Suef Governorate – Egypt',
-      emailSales: 'sales@greenglobeherbs.com',
+      emailSales: 'sales@greenherbseg.com',
     },
     contactPage: {
       heroBadge: 'Global Trade Inquiries',
@@ -315,16 +315,16 @@ export const translations = {
       noData: 'لا توجد بيانات',
     },
     home: {
-      heroTitle: 'جرين جلوب للأعشاب - أعشاب وبهارات عضوية',
+      heroTitle: 'جرين هيربس إيجيبت - أعشاب وبهارات عضوية',
       heroSubtitle: 'تصدير أفضل الأعشاب الطبية والبهارات من مزارع مستدامة إلى جميع أنحاء العالم',
       heroCta: 'استكشف المنتجات',
       featuredProducts: 'منتجاتنا العضوية',
-      whyChooseUs: 'لماذا تختار جرين جلوب للأعشاب',
+      whyChooseUs: 'لماذا تختار جرين هيربس إيجيبت',
       testimonials: 'آراء العملاء',
     },
     homePage: {
       heroBadge: 'أعشاب عضوية معتمدة',
-      heroTitleLine1: 'جرين جلوب للأعشاب،',
+      heroTitleLine1: 'جرين هيربس إيجيبت،',
       heroTitleLine2: 'أعشاب وبهارات طبيعية فاخرة',
       heroDescription:
         'اكتشف مجموعتنا المتميزة من الأعشاب الطبية والبهارات والبقوليات والبذور العضوية المعتمدة، من مزارع مصرية مستدامة تلبي متطلبات التصدير العالمي.',
@@ -351,7 +351,7 @@ export const translations = {
       ],
       formulaBadge: 'مُصدر عالمي موثوق',
       formulaDescription:
-        'جرين جلوب للأعشاب هي إحدى الشركات الرائدة في تصدير الأعشاب الطبية والبهارات والبقوليات والبذور مع سمعة متميزة في الجودة والأسعار التنافسية والزراعة المستدامة.',
+        'جرين هيربس إيجيبت هي إحدى الشركات الرائدة في تصدير الأعشاب الطبية والبهارات والبقوليات والبذور مع سمعة متميزة في الجودة والأسعار التنافسية والزراعة المستدامة.',
       standardsTitle: 'الشهادات الدولية',
       standards: ['معتمد من HACCP', 'ISO 22000', 'شهادات عضوية دولية', 'متوافق مع الاتحاد الأوروبي', 'تسجيل FDA'],
       featuredBadge: 'فئات منتجاتنا',
@@ -387,20 +387,20 @@ export const translations = {
       testimonialsBadge: 'شركاء عالميون',
       testimonialsTitle: 'موثوق به من قبل قادة الصناعة',
       testimonialsDescription:
-        'يعتمد كبار مستوردي الأغذية وخلاطو الشاي وشركات الأدوية عالمياً على جرين جلوب للأعشاب للحصول على إمدادات نباتية بالجملة متسقة وفاخرة.',
+        'يعتمد كبار مستوردي الأغذية وخلاطو الشاي وشركات الأدوية عالمياً على جرين هيربس إيجيبت للحصول على إمدادات نباتية بالجملة متسقة وفاخرة.',
       testimonialsItems: [
         {
-          text: 'جودة الأعشاب والتوابل المجففة استثنائية. إمداداتهم الموثوقة بالجملة والتزامهم الصارم بمعايير الاتحاد الأوروبي تجعل جرين جلوب شريك تصدير قيم لتصنيعنا.',
+          text: 'جودة الأعشاب والتوابل المجففة استثنائية. إمداداتهم الموثوقة بالجملة والتزامهم الصارم بمعايير الاتحاد الأوروبي تجعل جرين هيربس إيجيبت شريك تصدير قيم لتصنيعنا.',
           name: 'Michael Chen',
           role: 'Procurement Director, Food & Beverage Corp.',
         },
         {
-          text: 'نحصل على الريحان والنعناع والبابونج العضوي من جرين جلوب للأعشاب. معايير المعالجة وإمكانية التتبع والتعامل المهني مع التصدير ساعدت في نمو أعمالنا.',
+          text: 'نحصل على الريحان والنعناع والبابونج العضوي من جرين هيربس إيجيبت. معايير المعالجة وإمكانية التتبع والتعامل المهني مع التصدير ساعدت في نمو أعمالنا.',
           name: 'Elena Rossi',
           role: 'Head of Sourcing, International Tea Blends',
         },
       ],
-      trustLabel: 'GREEN GLOBE HERBS',
+      trustLabel: 'GREEN HERBS EG',
       faqBadge: 'الأسئلة الشائعة للتصدير B2B',
       faqTitle: 'الأسئلة المتداولة',
       faqDescription:
@@ -441,7 +441,7 @@ export const translations = {
       storyBadge: 'لمحة عن الشركة',
       storyTitle: 'قيادة التصدير النباتي في مصر',
       storyDescriptionOne:
-        'جرين جلوب للأعشاب هي مورد ومعالج ومُصدر مصري رائد للأعشاب والتوابل والبذور والمواد الخام النباتية عالية الجودة. متجذرون في التاريخ الزراعي الغني لمصر، نربط التميز الزراعي المحلي بمتطلبات الصناعة العالمية.',
+        'جرين هيربس إيجيبت هي مورد ومعالج ومُصدر مصري رائد للأعشاب والتوابل والبذور والمواد الخام النباتية عالية الجودة. متجذرون في التاريخ الزراعي الغني لمصر، نربط التميز الزراعي المحلي بمتطلبات الصناعة العالمية.',
       storyDescriptionTwo:
         'بفضل البنية التحتية القوية للمعالجة والالتزام بمراقبة الجودة الصارمة، نوفر إمدادات موثوقة بالجملة لصناعات الأغذية والشاي والأدوية ومستحضرات التجميل عبر الأسواق الدولية.',
       stats: [
@@ -459,9 +459,9 @@ export const translations = {
       valuesTitle: 'قيمنا',
       valuesDescription:
         'ضمان الجودة، شفافية سلسلة التوريد، الممارسات الزراعية المستدامة، وبناء شراكات B2B طويلة الأجل تشكل أساس عملياتنا.',
-      whyChooseUsTitle: 'لماذا تختار جرين جلوب للأعشاب؟',
+      whyChooseUsTitle: 'لماذا تختار جرين هيربس إيجيبت؟',
       whyChooseUsIntro:
-        'جرين جلوب للأعشاب هي مورد ومُصدر موثوق للأعشاب والتوابل والبذور والزهور المجففة عالية الجودة، تخدم العملاء عبر الأسواق الدولية. نحن نقدم كلاً من المنتجات العضوية والتقليدية، مدعومة بمعايير جودة صارمة، ومصادر موثوقة، وخدمات تصدير احترافية.\n\nمهمتنا هي تقديم منتجات زراعية آمنة وطبيعية وعالية الجودة مع بناء شراكات طويلة الأجل قائمة على الثقة والاتساق ورضا العملاء.',
+        'جرين هيربس إيجيبت هي مورد ومُصدر موثوق للأعشاب والتوابل والبذور والزهور المجففة عالية الجودة، تخدم العملاء عبر الأسواق الدولية. نحن نقدم كلاً من المنتجات العضوية والتقليدية، مدعومة بمعايير جودة صارمة، ومصادر موثوقة، وخدمات تصدير احترافية.\n\nمهمتنا هي تقديم منتجات زراعية آمنة وطبيعية وعالية الجودة مع بناء شراكات طويلة الأجل قائمة على الثقة والاتساق ورضا العملاء.',
       whyChooseUsSections: [
         {
           title: 'خبرة في المنتجات العضوية والتقليدية',
@@ -485,7 +485,7 @@ export const translations = {
         },
         {
           title: 'بناء شراكات طويلة الأجل',
-          body: 'في جرين جلوب للأعشاب، نؤمن بأن الأعمال الناجحة تُبنى على الثقة والتعاون طويل الأجل. نحن نعمل عن كثب مع عملائنا لتوفير جودة متسقة وخدمة احترافية ودعم موثوق يساهم في نموهم ونجاحهم.',
+          body: 'في جرين هيربس إيجيبت، نؤمن بأن الأعمال الناجحة تُبنى على الثقة والتعاون طويل الأجل. نحن نعمل عن كثب مع عملائنا لتوفير جودة متسقة وخدمة احترافية ودعم موثوق يساهم في نموهم ونجاحهم.',
         },
       ],
       certifications: [
@@ -506,7 +506,7 @@ export const translations = {
         'دعم الشحن والخدمات اللوجستية الدولية',
       ],
       whyChooseUsClosing:
-        'في جرين جلوب للأعشاب، نؤمن بأن الأعمال الناجحة تُبنى على الثقة والتعاون طويل الأجل. نحن نعمل عن كثب مع عملائنا لتوفير جودة متسقة وخدمة احترافية ودعم موثوق يساهم في نموهم ونجاحهم.',
+        'في جرين هيربس إيجيبت، نؤمن بأن الأعمال الناجحة تُبنى على الثقة والتعاون طويل الأجل. نحن نعمل عن كثب مع عملائنا لتوفير جودة متسقة وخدمة احترافية ودعم موثوق يساهم في نموهم ونجاحهم.',
       whyChooseUsCta: 'اختر مورداً يجمع بين الجودة المعتمدة، وخبرة السوق العالمية، والتوريد الموثوق، ومعايير سلامة الأغذية التي لا هوادة فيها للأعشاب والتوابل والبذور والزهور المجففة العضوية والتقليدية.',
     },
     products: {
@@ -529,7 +529,7 @@ export const translations = {
     },
     contact: {
       title: 'اتصل بنا',
-      subtitle: 'تواصل مع فريق تصدير جرين جلوب للأعشاب',
+      subtitle: 'تواصل مع فريق تصدير جرين هيربس إيجيبت',
       name: 'اسمك / الشركة',
       email: 'البريد الإلكتروني للشركة',
       phone: 'رقم الهاتف',
@@ -541,7 +541,7 @@ export const translations = {
       phoneNumber: 'الهاتف',
       emailAddress: 'البريد الإلكتروني',
       addressFull: 'سمسطا الوقف – محافظة بني سويف – جمهورية مصر العربية',
-      emailSales: 'sales@greenglobeherbs.com',
+      emailSales: 'sales@greenherbseg.com',
     },
     contactPage: {
       heroBadge: 'استفسارات التجارة العالمية',

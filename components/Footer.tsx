@@ -46,8 +46,8 @@ const Footer = () => {
   
   const footerText = {
     intro: isEn
-        ? 'Green Globe Herbs is a premier Egyptian exporter of high-grade medicinal herbs, legumes, spices, and seeds. Cultivated with sustainable organic farming and shipped to over 50 countries worldwide.'
-        : 'جرين جلوب للأعشاب هي شركة رائدة في تصدير الأعشاب الطبية والبهارات والبذور والبقوليات العالية الجودة، المزروعة بأساليب عضوية مستدامة والمُصدرة لأكثر من 50 دولة حول العالم.',
+        ? 'GREEN HERBS EG is a premier Egyptian exporter of high-grade medicinal herbs, legumes, spices, and seeds. Cultivated with sustainable organic farming and shipped to over 50 countries worldwide.'
+        : 'جرين هيربس إيجيبت هي شركة رائدة في تصدير الأعشاب الطبية والبهارات والبذور والبقوليات العالية الجودة، المزروعة بأساليب عضوية مستدامة والمُصدرة لأكثر من 50 دولة حول العالم.',
     products: isEn ? 'Our Products' : 'منتجاتنا',
     company: isEn ? 'Quick Links' : 'روابط سريعة',
     contact: isEn ? 'Contact Us' : 'اتصل بنا',
@@ -90,14 +90,14 @@ const Footer = () => {
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-full group-hover:scale-105 transition-all duration-300 drop-shadow-[0_4px_20px_rgba(37,211,102,0.25)] flex items-center justify-center">
                 <img
                   src="/images/logo.png"
-                  alt="Green Globe Herbs Logo"
+                  alt="GREEN HERBS EG Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col">
                 <div className="font-extrabold text-[16px] sm:text-[18px] text-primary dark:text-white tracking-[0.14em] leading-tight flex items-center gap-1.5 font-headline-sm">
-                  <span>GREEN GLOBE</span>
-                  <span className="text-secondary font-black">HERBS</span>
+                  <span>GREEN HERBS</span>
+                  <span className="text-secondary font-black">EG</span>
                 </div>
                 <span className="text-[9.5px] sm:text-[10px] font-bold tracking-[0.26em] uppercase text-secondary/80 leading-none mt-1">
                   {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
@@ -198,7 +198,7 @@ const Footer = () => {
             <div className="space-y-3 font-body-md text-[14px] text-on-surface-variant">
               <div className="flex items-center gap-2.5">
                 <FiMail className="text-secondary w-4 h-4 shrink-0" />
-                <a href="mailto:sales@greenglobeherbs.com" className="hover:text-secondary transition-colors truncate">sales@greenglobeherbs.com</a>
+                <a href="mailto:sales@greenherbseg.com" className="hover:text-secondary transition-colors truncate">sales@greenherbseg.com</a>
               </div>
               <div className="flex items-center gap-2.5">
                 <FiPhone className="text-secondary w-4 h-4 shrink-0" />
@@ -210,7 +210,7 @@ const Footer = () => {
               </div>
               <div className="pt-2">
                 <a
-                  href="https://wa.me/201278201346?text=Hello! I'm interested in Green Globe Herbs products."
+                  href="https://wa.me/201278201346?text=Hello! I'm interested in GREEN HERBS EG products."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="whatsapp-glow inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider transition-all"
@@ -226,7 +226,7 @@ const Footer = () => {
         {/* Bottom Bar with Certificates & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-[13px] text-on-surface-variant">
           <div>
-            &copy; {new Date().getFullYear()} <strong className="text-primary">Green Globe Herbs</strong>. {footerText.rights}
+            &copy; {new Date().getFullYear()} <strong className="text-primary">GREEN HERBS EG</strong>. {footerText.rights}
           </div>
           <div className="flex items-center gap-3 text-xs opacity-75">
             <span>ISO 22000</span>
