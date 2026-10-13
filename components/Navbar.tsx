@@ -85,26 +85,28 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 border-b border-white/10 ${
         isScrolled
-          ? 'bg-[#07130E]/95 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-2xl'
-          : 'bg-[#07130E]/85 py-4 shadow-[0_4px_25px_rgba(0,0,0,0.4)] backdrop-blur-xl'
+          ? 'bg-[#07130E]/95 py-2.5 sm:py-3 shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-2xl'
+          : 'bg-[#07130E]/85 py-3 sm:py-4 shadow-[0_4px_25px_rgba(0,0,0,0.4)] backdrop-blur-xl'
       } ${!isEn ? 'rtl' : ''}`}
     >
-      <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4">
+      <div className="max-w-[1360px] mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
           
-          {/* Brand Logo with Radiant Emerald Leaf Emblem */}
-          <Link href="/" className="flex items-center gap-3 group text-decoration-none shrink-0">
-            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 p-0.5 shadow-[0_0_20px_rgba(37,211,102,0.4)] group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(37,211,102,0.6)] transition-all">
-              <div className="w-full h-full rounded-[10px] bg-[#07130E] flex items-center justify-center">
-                <FaLeaf className="w-5 h-5 text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
-              </div>
+          {/* Brand Logo with Image and Text */}
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group text-decoration-none shrink-0" aria-label="Home">
+            <div className="relative w-10 h-10 sm:w-13 sm:h-13 md:w-14 md:h-14 shrink-0 rounded-full group-hover:scale-105 transition-all duration-300 drop-shadow-[0_4px_16px_rgba(37,211,102,0.35)] flex items-center justify-center">
+              <img
+                src="/images/logo.png"
+                alt="Green Globe Herbs Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
-              <div className="font-extrabold text-[14px] sm:text-[16px] text-white tracking-[0.14em] leading-tight flex items-center gap-1.5 font-headline-sm">
+              <div className="font-extrabold text-[13px] sm:text-[16px] md:text-[17px] text-white tracking-[0.1em] sm:tracking-[0.14em] leading-tight flex items-center gap-1 sm:gap-1.5 font-headline-sm whitespace-nowrap">
                 <span>GREEN GLOBE</span>
                 <span className="text-emerald-400 font-black">HERBS</span>
               </div>
-              <span className="text-[9px] font-bold tracking-[0.26em] uppercase text-emerald-300/80 leading-none mt-1">
+              <span className="block text-[8px] sm:text-[9.5px] md:text-[10px] font-bold tracking-[0.16em] sm:tracking-[0.24em] uppercase text-emerald-300/80 leading-none mt-0.5 sm:mt-1 whitespace-nowrap">
                 {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
               </span>
             </div>
@@ -202,27 +204,29 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Right Controls */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="px-2.5 py-1 rounded-full border border-white/20 bg-white/10 text-white font-bold text-xs"
+              className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold text-[11px] sm:text-xs transition-colors shrink-0 backdrop-blur-md"
+              title="Switch language"
             >
               {language === 'en' ? 'AR' : 'EN'}
             </button>
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full border border-white/20 bg-white/10 text-white"
+              className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white transition-colors shrink-0 backdrop-blur-md"
+              title="Toggle theme"
             >
-              {theme === 'light' ? <FiMoon className="h-4 w-4" /> : <FiSun className="h-4 w-4" />}
+              {theme === 'light' ? <FiMoon className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <FiSun className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
             </button>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-full bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors"
+              className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-emerald-500/20 text-white border border-emerald-500/40 hover:bg-emerald-500/30 transition-colors shrink-0"
               aria-label="Toggle Mobile Navigation"
             >
-              {isMenuOpen ? <FiX className="h-5 w-5" /> : <FiMenu className="h-5 w-5" />}
+              {isMenuOpen ? <FiX className="h-4 w-4 sm:h-5 sm:w-5 text-white" /> : <FiMenu className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-300" />}
             </button>
           </div>
 
@@ -241,11 +245,18 @@ const Navbar = () => {
           >
             {/* Header in Mobile Menu */}
             <div className="flex items-center justify-between pb-6 border-b border-white/15">
-              <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white">
-                  <FaLeaf className="w-4 h-4" />
+              <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full shrink-0 flex items-center justify-center drop-shadow-md">
+                  <img src="/images/logo.png" alt="Green Globe Herbs Logo" className="w-full h-full object-contain" />
                 </div>
-                <span className="font-extrabold text-white text-base tracking-wider font-headline-sm">GREEN GLOBE HERBS</span>
+                <div className="flex flex-col">
+                  <div className="font-extrabold text-white text-base tracking-wider font-headline-sm flex items-center gap-1.5">
+                    <span>GREEN GLOBE</span> <span className="text-emerald-400 font-black">HERBS</span>
+                  </div>
+                  <span className="text-[9px] font-bold tracking-[0.2em] uppercase text-emerald-300/80 leading-none mt-1">
+                    {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
+                  </span>
+                </div>
               </Link>
               <button
                 onClick={() => setIsMenuOpen(false)}

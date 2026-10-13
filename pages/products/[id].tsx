@@ -13,6 +13,7 @@ import {
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { GetServerSideProps } from 'next';
+import localProducts from '@/data/products.json';
 
 interface Product {
   id: number;
@@ -412,8 +413,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "ريحان مصري حلو غني باللينالول، مفروز ليزرياً بنقاوة 99.9% وخالٍ من المبيدات.",
     description_en: "Prime Egyptian sweet basil cultivated in the fertile Nile alluvial basin in Beni Suef. Screened through multi-stage vibratory sieves and color optical sorters to eliminate stalks and dust. Rich in aromatic linalool and methyl chavicol, perfectly suited for European gourmet seasonings, extraction, and culinary tea infusions.",
     description_ar: "ريحان مصري بلدي فاخر من مزارع حوض النيل في بني سويف، مجهز ومفروز بأحدث التقنيات الضوئية الأوروبية لعزل الشوائب والسيقان. غني بمركبات اللينالول العطرية لتتبيل الأغذية واستخلاص الزيوت وتوليفات الشاي الطبيعي.",
-    image: "/images/product/BASIL.jpg",
-    images: ["/images/product/BASIL.jpg", "/images/agriculture-healthy-food.jpg"],
+    image: "/images/products/basil.jpg",
+    images: ["/images/products/basil.jpg", "/images/agriculture-healthy-food.jpg"],
     category: { id: 1, name_en: "Herbs", name_ar: "أعشاب" },
     origin: "Beni Suef, Nile Valley, Egypt",
     form: "Whole & Crushed Rubbed Leaves",
@@ -478,8 +479,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "بتلات كركديه ياقوتية داكنة غنية بمضادات الأكسدة والأنثوسيانين لنكهة منعشة فاخرة.",
     description_en: "Sun-cured intact calyces cultivated along the sun-drenched Upper Egypt riverbanks in Aswan. Rich in ruby anthocyanins, fruit acids, and vitamin C. Naturally dehydrated without any sulfur or color preservatives.",
     description_ar: "بتلات كركديه أسواني مجففة شمسياً على ضفاف النيل بصعيد مصر، غنية بمضادات الأكسدة والأنثوسيانين وفيتامين سي وبدون أي إضافات كيميائية أو معالجة بالكبريت.",
-    image: "/images/product/Hibiscus.jpg",
-    images: ["/images/product/Hibiscus.jpg"],
+    image: "/images/products/hibiscus.jpg",
+    images: ["/images/products/hibiscus.jpg"],
     category: { id: 3, name_en: "Herbal Teas", name_ar: "شاي عشبي" },
     origin: "Aswan & Upper Egypt",
     form: "Whole Calyces / Siftings",
@@ -500,8 +501,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "بذور شمر نقية برائحة ينسونية زكية ونسبة زيت طيار تتجاوز 2% لتطبيقات الأغذية والأدوية.",
     description_en: "Natural sun-cured oval seeds screened on vibrating gravity tables and de-stoners. Sweet aniseed aroma and high essential oil content meeting European Pharmacopoeia monographs.",
     description_ar: "بذور شمر مفرزة على طاولات الجاذبية وخالية من الحبوب الفارغة، بنسبة زيوت طيارة عالية تطابق دستور الأدوية الأوروبي.",
-    image: "/images/product/Fennel.jpg",
-    images: ["/images/product/Fennel.jpg"],
+    image: "/images/products/fennel.jpg",
+    images: ["/images/products/fennel.jpg"],
     category: { id: 4, name_en: "Seeds", name_ar: "بذور" },
     origin: "Beni Suef Alluvial Basin, Egypt",
     form: "Whole Clean Seeds (Mesh 99%)",
@@ -522,8 +523,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "بردقوش بلدي فاخر بلون زيتوني مخملي ورائحة عطرية دافئة لتوابل الأغذية والخلطات.",
     description_en: "Gently rubbed and aspirated marjoram leaves. High essential oil concentration (>1.8%) rich in terpinen-4-ol. Optical laser-sorted to ensure no stems or inert plant matter.",
     description_ar: "أوراق بردقوش مفرزة هوائياً وغنية بمركب التربينين، مطابقة لأدق المعايير الأوروبية للتوابل وصناعات الأغذية الفاخرة.",
-    image: "/images/product/Marjoram.jpg",
-    images: ["/images/product/Marjoram.jpg"],
+    image: "/images/products/marjoram.jpg",
+    images: ["/images/products/marjoram.jpg"],
     category: { id: 1, name_en: "Herbs", name_ar: "أعشاب" },
     origin: "Nile Valley, Beni Suef",
     form: "Clean Rubbed Leaves",
@@ -544,8 +545,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "ينسون مصري شهير عالمياً بنقاوته العالية ونسبة مركب الترانس-أنيثول للاستخدام الصيدلاني والغذائي.",
     description_en: "Egyptian anise is regarded worldwide as the benchmark for sweet licorice aroma and pharmaceutical-grade purity. Screened through three-stage laser color sorters to ensure 99.8% physical purity.",
     description_ar: "الينسون المصري يعد المعيار الذهبي عالمياً للنقاء ورائحة الأنيثول الزكية، مجهز عبر 3 مراحل فرز ليزري متطورة.",
-    image: "/images/product/Anise.jpg",
-    images: ["/images/product/Anise.jpg"],
+    image: "/images/products/anise.jpg",
+    images: ["/images/products/anise.jpg"],
     category: { id: 4, name_en: "Seeds", name_ar: "بذور" },
     origin: "Middle Egypt",
     form: "Whole Triple-Sifted Seeds",
@@ -566,8 +567,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "أوراق زعتر بري غنية بالثيمول، مفروزة ضوئياً ومطابقة للمواصفات الميكروبيولوجية الأوروبية.",
     description_en: "Wild-grown aromatic thyme with intense pungent herbal aroma and high thymol percentage. Dehydrated in shade tunnels and machine-sifted for Mediterranean seasoning blends.",
     description_ar: "زعتر عطري غني بالثيمول مطهر ومجفف بعناية في أنفاق تجفيف نظيفة، ومفرز لإزالة السيقان والشوائب.",
-    image: "/images/product/Thyme.jpg",
-    images: ["/images/product/Thyme.jpg"],
+    image: "/images/products/thyme.jpg",
+    images: ["/images/products/thyme.jpg"],
     category: { id: 1, name_en: "Herbs", name_ar: "أعشاب" },
     origin: "Nile Basin, Egypt",
     form: "Clean Rubbed Leaves",
@@ -588,8 +589,8 @@ const fallbackProductCatalog: Product[] = [
     short_description_ar: "إكليل جبل نقي برائحة خشبية صنوبرية مميزة لتتبيل اللحوم واستخلاص مضادات الأكسدة الطبيعية.",
     description_en: "Carefully harvested needle-like leaves with robust cineole and carnosic acid antioxidant levels. Excellent color retention and uniform needle grading.",
     description_ar: "أوراق إبرية نقية مجففة بعناية مع الاحتفاظ بلونها الأخضر الطبيعي ونسبة عالية من مضادات الأكسدة الطبيعية.",
-    image: "/images/product/Rosemary.jpg",
-    images: ["/images/product/Rosemary.jpg"],
+    image: "/images/products/rosemary.jpg",
+    images: ["/images/products/rosemary.jpg"],
     category: { id: 1, name_en: "Herbs", name_ar: "أعشاب" },
     origin: "Beni Suef, Egypt",
     form: "Whole Needles & Cut",
@@ -609,7 +610,25 @@ export const getServerSideProps: GetServerSideProps<ProductDetailsProps> = async
   const rawId = Array.isArray(rawParam) ? rawParam[0] : (rawParam || '');
   const cleanId = rawId.replace(/\/$/, '');
 
-  // 1. First check if it matches our rich fallback database
+  // 1. Match from our primary local products database (51 products)
+  const localMatch = (localProducts as any[]).find(
+    (p) => p.id?.toString() === cleanId || p.slug === cleanId
+  );
+  if (localMatch) {
+    const sameCat = (localProducts as any[]).filter(
+      (p) => p.id !== localMatch.id && p.category?.slug === localMatch.category?.slug
+    );
+    const suggestedProducts = (sameCat.length >= 3 ? sameCat : (localProducts as any[]).filter((p) => p.id !== localMatch.id)).slice(0, 3);
+
+    return {
+      props: {
+        product: localMatch as Product,
+        suggestedProducts: suggestedProducts as Product[],
+      },
+    };
+  }
+
+  // 2. Check fallback catalog
   const fallbackMatch = fallbackProductCatalog.find((p) => p.id.toString() === cleanId);
   if (fallbackMatch) {
     const suggestedProducts = fallbackProductCatalog
@@ -624,43 +643,11 @@ export const getServerSideProps: GetServerSideProps<ProductDetailsProps> = async
     };
   }
 
-  try {
-    // 2. Attempt API fetch
-    const productResponse = await api.get(`/products/${cleanId}`);
-    const product = productResponse.data?.data || productResponse.data;
-
-    if (product) {
-      if (product.price) product.price = Number(product.price);
-      
-      let suggestedProducts: Product[] = [];
-      if (product.category?.id) {
-        try {
-          const suggestedResponse = await api.get('/products', {
-            params: { category_id: product.category.id },
-          });
-          const allSuggested = suggestedResponse.data?.data || suggestedResponse.data || [];
-          suggestedProducts = allSuggested.filter((p: Product) => p.id !== product.id).slice(0, 3);
-        } catch {}
-      }
-
-      if (suggestedProducts.length === 0) {
-        suggestedProducts = fallbackProductCatalog.filter((p) => p.id !== product.id).slice(0, 3);
-      }
-
-      return {
-        props: {
-          product,
-          suggestedProducts,
-        },
-      };
-    }
-  } catch {}
-
-  // 3. Ultimate graceful fallback
+  // 3. Graceful fallback
   return {
     props: {
-      product: fallbackProductCatalog[0],
-      suggestedProducts: fallbackProductCatalog.slice(1, 4),
+      product: (localProducts[0] as unknown as Product) || fallbackProductCatalog[0],
+      suggestedProducts: (localProducts.slice(1, 4) as unknown as Product[]),
     },
   };
 };

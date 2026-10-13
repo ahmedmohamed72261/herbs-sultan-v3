@@ -10,14 +10,14 @@ export default function FloatingWhatsApp() {
     ? 'Hello Green Globe Herbs, I am interested in your premium herbs and spices products. Could you please share your catalog and wholesale pricing? Thank you.'
     : 'مرحباً شركة جرين جلوب للأعشاب، أنا مهتم بمنتجاتكم الممتازة من الأعشاب والتوابل. هل يمكنكم مشاركة كتالوج المنتجات وأسعار الجملة؟ شكراً لكم.';
   const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
-  const positionClass = language === 'ar' ? 'left-8' : 'right-8';
+  const positionClass = language === 'ar' ? 'left-4 sm:left-8' : 'right-4 sm:right-8';
 
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className={`fixed bottom-8 ${positionClass} z-40 flex flex-col items-end gap-3`}
+      className={`fixed bottom-5 sm:bottom-8 ${positionClass} z-40 flex flex-col items-end gap-3`}
     >
       {/* Chat Bubble Tooltip */}
       <motion.div
@@ -53,9 +53,9 @@ export default function FloatingWhatsApp() {
           delay: 0.1,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className={`relative flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#25d366] to-[#1fbd5a] text-white shadow-[0_20px_45px_rgba(37,211,102,0.3)] ring-2 ring-white/20 transition-all duration-300 hover:ring-white/40 focus:outline-none focus:ring-4 focus:ring-[#25d366]/50 group`}
+        className={`relative flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#25d366] to-[#1fbd5a] text-white shadow-[0_20px_45px_rgba(37,211,102,0.3)] ring-2 ring-white/20 transition-all duration-300 hover:ring-white/40 focus:outline-none focus:ring-4 focus:ring-[#25d366]/50 group`}
       >
-        <FaWhatsapp className="h-7 w-7 transition-transform duration-300 group-hover:scale-110" />
+        <FaWhatsapp className="h-6 w-6 sm:h-7 sm:w-7 transition-transform duration-300 group-hover:scale-110" />
 
         {/* Pulse Ring Animation */}
         <motion.div

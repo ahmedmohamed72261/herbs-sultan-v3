@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "slug": "herbs",
+    "name_en": "Herbs",
+    "name_ar": "أعشاب",
+    "description_en": "Certified organic culinary and aromatic herbs grown under the Egyptian sun, processed with multi-stage optical grading.",
+    "description_ar": "أعشاب عطرية وطهوية عضوية معتمدة من حوض النيل بمصر، مجهزة بأحدث خطوط الفرز الضوئي.",
+    "image": "/images/category/herbs.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "seeds",
+    "name_en": "Seeds",
+    "name_ar": "بذور",
+    "description_en": "Premium quality aromatic, culinary, and oil seeds triple-cleaned and compliant with international pharmacopoeias.",
+    "description_ar": "بذور عطرية وزيتية عالية النقاء مفرزة ومطابقة للمواصفات القياسية الدولية ودستور الأدوية الأوروبي.",
+    "image": "/images/category/seeds.jpg"
+  },
+  {
+    "id": 3,
+    "slug": "spices",
+    "name_en": "Spices",
+    "name_ar": "توابل وبهارات",
+    "description_en": "Vibrant dehydrated and whole Egyptian spices packed with essential oils and authentic flavor.",
+    "description_ar": "توابل وبهارات مصرية فاخرة غنية بالزيوت العطرية والنكهات الأصيلة للأسواق العالمية.",
+    "image": "/images/category/spices.jpg"
+  },
+  {
+    "id": 4,
+    "slug": "legumes",
+    "name_en": "Grains & Legumes",
+    "name_ar": "حبوب وبقوليات",
+    "description_en": "Nutritious Egyptian pulses and agricultural grains, mechanically cleaned and destoned for food manufacturing.",
+    "description_ar": "بقوليات وحبوب زراعية مغذية ومفروزة آلياً من الحصى والشوائب لأغراض التصنيع والتعبئة الغذائية.",
+    "image": "/images/category/Legumes.jpg"
+  },
+  {
+    "id": 5,
+    "slug": "dried-flowers",
+    "name_en": "Dried Flowers",
+    "name_ar": "زهور مجففة",
+    "description_en": "Sun-cured whole botanical flowers and calyces, selected for intact petals, natural aroma, and rich color.",
+    "description_ar": "زهور وبراعم نباتية مجففة شمسياً منتقاة بعناية للحفاظ على نقاء البتلات واللون والزيوت العطرية.",
+    "image": "/images/category/Dried_Flowers.jpg"
+  },
+  {
+    "id": 6,
+    "slug": "botanicals",
+    "name_en": "Botanicals",
+    "name_ar": "نباتات طبية",
+    "description_en": "High-potency medicinal botanicals, roots, and wellness crops for nutraceutical, herbal tea, and pharmaceutical formulations.",
+    "description_ar": "نباتات طبية وجذور عشبية علاجية للصناعات الدوائية ومستخلصات الشاي والمكملات الغذائية.",
+    "image": "/images/category/Botanicals.jpg"
+  }
+]

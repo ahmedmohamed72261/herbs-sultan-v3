@@ -86,18 +86,20 @@ const Footer = () => {
           
           {/* Brand & Mission Column */}
           <div className="lg:col-span-4 flex flex-col pr-4">
-            <Link href="/" className="flex items-center gap-3 group text-decoration-none mb-6">
-              <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 p-0.5 shadow-[0_0_20px_rgba(37,211,102,0.3)] group-hover:scale-105 transition-all">
-                <div className="w-full h-full rounded-[10px] bg-[#07130E] flex items-center justify-center">
-                  <FaLeaf className="w-5 h-5 text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
-                </div>
+            <Link href="/" className="flex items-center gap-4 group text-decoration-none mb-6" aria-label="Home">
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-full group-hover:scale-105 transition-all duration-300 drop-shadow-[0_4px_20px_rgba(37,211,102,0.25)] flex items-center justify-center">
+                <img
+                  src="/images/logo.png"
+                  alt="Green Globe Herbs Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
-                <div className="font-extrabold text-[15px] sm:text-[16px] text-primary dark:text-white tracking-[0.14em] leading-tight flex items-center gap-1.5 font-headline-sm">
+                <div className="font-extrabold text-[16px] sm:text-[18px] text-primary dark:text-white tracking-[0.14em] leading-tight flex items-center gap-1.5 font-headline-sm">
                   <span>GREEN GLOBE</span>
                   <span className="text-secondary font-black">HERBS</span>
                 </div>
-                <span className="text-[9px] font-bold tracking-[0.26em] uppercase text-secondary/80 leading-none mt-1">
+                <span className="text-[9.5px] sm:text-[10px] font-bold tracking-[0.26em] uppercase text-secondary/80 leading-none mt-1">
                   {isEn ? "Botanical Exports • Egypt" : "تصدير الأعشاب الطبية • مصر"}
                 </span>
               </div>

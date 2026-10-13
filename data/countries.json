@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "de",
+    "name_en": "Germany",
+    "name_ar": "ألمانيا",
+    "code": "DE",
+    "region": "Europe",
+    "flag": "/images/countries/France.webp",
+    "cover": "/images/countries/france-cover.jpg",
+    "display_order": 1
+  },
+  {
+    "_id": "us",
+    "name_en": "United States",
+    "name_ar": "الولايات المتحدة",
+    "code": "US",
+    "region": "North America",
+    "flag": "/images/countries/U.S..webp",
+    "cover": "/images/countries/us-cover.jpg",
+    "display_order": 2
+  },
+  {
+    "_id": "uk",
+    "name_en": "United Kingdom",
+    "name_ar": "المملكة المتحدة",
+    "code": "GB",
+    "region": "Europe",
+    "flag": "/images/countries/U.K..webp",
+    "cover": "/images/countries/uk-cover.webp",
+    "display_order": 3
+  },
+  {
+    "_id": "fr",
+    "name_en": "France",
+    "name_ar": "فرنسا",
+    "code": "FR",
+    "region": "Europe",
+    "flag": "/images/countries/France.webp",
+    "cover": "/images/countries/france-cover.jpg",
+    "display_order": 4
+  },
+  {
+    "_id": "sa",
+    "name_en": "Saudi Arabia",
+    "name_ar": "المملكة العربية السعودية",
+    "code": "SA",
+    "region": "GCC & Middle East",
+    "flag": "/images/countries/South Africa.webp",
+    "cover": "/images/countries/south-africa-cover.webp",
+    "display_order": 5
+  },
+  {
+    "_id": "ae",
+    "name_en": "United Arab Emirates",
+    "name_ar": "الإمارات العربية المتحدة",
+    "code": "AE",
+    "region": "GCC & Middle East",
+    "flag": "/images/countries/South Africa.webp",
+    "cover": "/images/countries/south-africa-cover.webp",
+    "display_order": 6
+  },
+  {
+    "_id": "in",
+    "name_en": "India",
+    "name_ar": "الهند",
+    "code": "IN",
+    "region": "Asia",
+    "flag": "/images/countries/India.webp",
+    "cover": "/images/countries/indian-cover.jpg",
+    "display_order": 7
+  },
+  {
+    "_id": "br",
+    "name_en": "Brazil",
+    "name_ar": "البرازيل",
+    "code": "BR",
+    "region": "South America",
+    "flag": "/images/countries/Brazil.webp",
+    "cover": "/images/countries/brazil-cover.jpg",
+    "display_order": 8
+  },
+  {
+    "_id": "za",
+    "name_en": "South Africa",
+    "name_ar": "جنوب أفريقيا",
+    "code": "ZA",
+    "region": "Africa",
+    "flag": "/images/countries/South Africa.webp",
+    "cover": "/images/countries/south-africa-cover.webp",
+    "display_order": 9
+  }
+]

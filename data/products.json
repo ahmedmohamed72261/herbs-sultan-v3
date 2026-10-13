@@ -1,0 +1,1991 @@
+[
+  {
+    "id": 1,
+    "slug": "echinacea",
+    "name_en": "Organic Echinacea (Coneflower)",
+    "name_ar": "إشنسا عضوية (حبة الشمس)",
+    "latin_name": "Echinacea purpurea",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Immune-boosting dried aerial parts and root cut, rich in echinacosides and polyphenols.",
+    "short_description_ar": "أعشاب وجذور إشنسا مجففة غنية بالإكيناكوسيد لتعزيز المناعة والصناعات الطبية.",
+    "description_en": "Grown under clean Egyptian sun, our Echinacea purpurea delivers high bioactive concentrations. Suitable for herbal tea blends, pharmaceutical extractions, and immune support dietary supplements.",
+    "description_ar": "تزرع الإشنسا تحت شمس مصر المعتدلة بنسب فائقة من المواد الفعالة ومضادات الأكسدة، وتناسب توليفات الشاي والكبسولات العلاجية.",
+    "form": "Cut (2-4mm) & Whole",
+    "purity": "99.5%",
+    "moisture": "< 8.5%",
+    "origin": "Beni Suef, Nile Valley, Egypt",
+    "color": "Green-Brown with Purple Petals",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/echinacea.jpg",
+    "images": [
+      "/images/products/echinacea.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "henna",
+    "name_en": "Pure Egyptian Henna",
+    "name_ar": "حناء مصرية نقية",
+    "latin_name": "Lawsonia inermis",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Finely milled 100% natural olive-green henna powder with high lawsone dye pigment.",
+    "short_description_ar": "بودرة حناء أسوانية نقية بلون زيتوني ومطحونة فائق النعومة لصبغ الشعر والعناية الطبيعية.",
+    "description_en": "Triple-sifted pure Lawsonia inermis cultivated in Aswan and Middle Egypt. Free from synthetic chemicals, metallic salts, or additives. Provides rich reddish-auburn coloration.",
+    "description_ar": "حناء أسوانية طبيعية 100% منتقاة ومطحونة بدون أي أملاح معدنية أو إضافات كيميائية، توفر تغذية ونقاء فائق للشعر.",
+    "form": "Fine Micronized Powder (100-120 Mesh)",
+    "purity": "99.9%",
+    "moisture": "< 7.0%",
+    "origin": "Aswan, Upper Egypt",
+    "color": "Olive Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/henna.jpg",
+    "images": [
+      "/images/products/henna.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "melissa-lemon-balm",
+    "name_en": "Melissa - Lemon Balm Leaves",
+    "name_ar": "مليسة / بلسم الليمون",
+    "latin_name": "Melissa officinalis",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Sun-dried lemon balm leaves with refreshing citrus aroma and high rosmarinic acid content.",
+    "short_description_ar": "أوراق مليسا مجففة برائحة ليمونية منعشة وخصائص مهدئة ومضادة للأكسدة.",
+    "description_en": "Carefully dehydrated at controlled low temperatures to retain delicate citrus volatile oils (citral and citronellal). Highly requested by European herbal tea blenders.",
+    "description_ar": "مجففة تحت درجات حرارة منخفضة للحفاظ على الزيوت العطرية الطيارة (السترال)، مثالية لخلطات الشاي المهدئ وتخفيف التوتر.",
+    "form": "Crushed & Whole Leaves",
+    "purity": "99.3%",
+    "moisture": "< 8.0%",
+    "origin": "Fayoum & Middle Egypt",
+    "color": "Soft Forest Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/melissa_lemon_balm.jpg",
+    "images": [
+      "/images/products/melissa_lemon_balm.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "molokhia",
+    "name_en": "Egyptian Molokhia (Jute Mallow)",
+    "name_ar": "ملوخية مصرية مجففة",
+    "latin_name": "Corchorus olitorius",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Sun-cured, finely rubbed green jute mallow leaves, rich in vitamins and dietary minerals.",
+    "short_description_ar": "أوراق ملوخية خضراء مجففة ومفروزة بعناية بلون زاهٍ وقيمة غذائية عالية.",
+    "description_en": "Harvested from Nile Delta farms, sorted through optical screens to discard woody stems. Popular culinary staple across Mediterranean and Middle Eastern markets.",
+    "description_ar": "ملوخية بلدية خضراء مجففة بطرق صحية ومفروزة ضوئياً من الشوائب والسيقان، خالية تماماً من الرمل والأتربة.",
+    "form": "Dry Leaves & Rubbed Cut",
+    "purity": "99.8%",
+    "moisture": "< 7.5%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Deep Vibrant Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/molokhia.jpg",
+    "images": [
+      "/images/products/molokhia.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "anastatica-hierochuntica",
+    "name_en": "Anastatica Hierochuntica (Kaff Maryam)",
+    "name_ar": "كف مريم / وردة أريحا",
+    "latin_name": "Anastatica hierochuntica",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Authentic botanical Rose of Jericho tumbleweed whole specimens for holistic wellness.",
+    "short_description_ar": "عشبة كف مريم الأصلية كاملة مجففة طبيعياً لتنظيم الهرمونات والصحة العامة.",
+    "description_en": "Wild-harvested desert botanical recognized for thousands of years. Rehydrates and unfurls in water, traditionally brewed for female reproductive health and holistic balance.",
+    "description_ar": "عشبة برية نادرة مجمعة من صحاري مصر، تنفتح عند وضعها في الماء، مشهورة تقليدياً لدعم صحة المرأة والولادة.",
+    "form": "Whole Intact Plant Specimens",
+    "purity": "99.0%",
+    "moisture": "< 6.5%",
+    "origin": "Sinai & Eastern Desert, Egypt",
+    "color": "Earth Brown / Tan",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/anastatica_hierochuntica.jpg",
+    "images": [
+      "/images/products/anastatica_hierochuntica.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "basil",
+    "name_en": "Organic Sweet Nile Basil",
+    "name_ar": "ريحان النيل الحلو العضوي",
+    "latin_name": "Ocimum basilicum",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Sun-cured sweet basil with >1.8% linalool essential oil, optical sorted to 99.9% purity.",
+    "short_description_ar": "ريحان مصري بلدي فاخر بنسبة زيوت طيارة تفوق 1.8% ومفروز ضوئياً بالليزر.",
+    "description_en": "Prime Egyptian sweet basil cultivated along the Nile alluvial basin. Steam-sterilized, laser-cleaned, compliant with European Pharmacopoeia and USDA organic regulations.",
+    "description_ar": "محصول التصدير الأول من مزارع حوض النيل ببني سويف، مفروز ضوئياً وخالٍ من المبيدات ومطابق لمواصفات مصنعي الأغذية العالمية.",
+    "form": "Whole Leaves, Crushed, T.B.C.",
+    "purity": "99.9%",
+    "moisture": "< 7.5%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Lush Forest Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/basil.jpg",
+    "images": [
+      "/images/products/basil.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "bay-leaves",
+    "name_en": "Egyptian Laurel Bay Leaves",
+    "name_ar": "ورق الغار (ورق لورا مصري)",
+    "latin_name": "Laurus nobilis",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Whole unbroken aromatic bay leaves with high 1,8-cineole essential oil content.",
+    "short_description_ar": "أوراق لورا عطرية كاملة وسليمة برائحة زكية لتتبيل اللحوم والأغذية الفاخرة.",
+    "description_en": "Hand-graded whole bay leaves, shade-dried to retain vibrant olive tint and pungent culinary aroma. Packaged to prevent leaf breakage during oceanic container transit.",
+    "description_ar": "أوراق غار منتقاة يدوياً ومجففة في الظل للحفاظ على اللون الأخضر الزيتوني والزيوت العطرية بدون تكسر.",
+    "form": "Whole Selected Leaves",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Lower Egypt / Coastal Farms",
+    "color": "Muted Olive Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/bay_leaves.jpg",
+    "images": [
+      "/images/products/bay_leaves.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "calendula",
+    "name_en": "Calendula (Marigold Flowers)",
+    "name_ar": "كاليندولا (أزهار الأقحوان الأصفر)",
+    "latin_name": "Calendula officinalis",
+    "category": {
+      "id": 4,
+      "slug": "dried-flowers",
+      "name_en": "Dried Flowers",
+      "name_ar": "زهور مجففة"
+    },
+    "short_description_en": "Whole golden flower heads and vibrant orange petals, gentle solar dehydrated.",
+    "short_description_ar": "أزهار كاليندولا ذهبية كاملة وبتلات برتقالية مجففة طبيعياً لمستحضرات التجميل والشاي.",
+    "description_en": "Gently harvested at dawn and dehydrated to preserve natural carotenoids, flavonoids, and therapeutic triterpenes. Used worldwide in skin care creams, teas, and tinctures.",
+    "description_ar": "مجمعة عند شروق الشمس ومجففة بعناية للحفاظ على الكاروتينات ومضادات الأكسدة لعلاج البشرة وتوليفات الشاي.",
+    "form": "Whole Flowers & Petals",
+    "purity": "98.5%",
+    "moisture": "< 8.5%",
+    "origin": "Fayoum Oasis, Egypt",
+    "color": "Brilliant Golden Orange",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/calendula.jpg",
+    "images": [
+      "/images/products/calendula.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "celery",
+    "name_en": "Dried Celery Leaves",
+    "name_ar": "أوراق كرفس مجففة",
+    "latin_name": "Apium graveolens",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Cleaned culinary celery flakes with savory-fresh aroma for industrial seasoning blends.",
+    "short_description_ar": "رقائق أوراق كرفس خضراء مجففة ونقية لتوابل الشوربات والأغذية المجففة.",
+    "description_en": "Washed, dried, and sieved celery leaves free of stalk fibers. Excellent savory seasoning ingredient for bouillon cubes, dry soup mixes, and meat rubs.",
+    "description_ar": "مغسولة ومجففة ومفرزة من السيقان، نكهة عشبية مركزة لتتبيل الشوربات والصلصات وتوليفات التوابل العالمية.",
+    "form": "Flakes / Rubbed (2-4mm)",
+    "purity": "99.4%",
+    "moisture": "< 7.0%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Bright Celery Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/celery.jpg",
+    "images": [
+      "/images/products/celery.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "chamomile",
+    "name_en": "Egyptian Golden Chamomile Flowers",
+    "name_ar": "أزهار البابونج المصري الذهبي",
+    "latin_name": "Matricaria chamomilla",
+    "category": {
+      "id": 4,
+      "slug": "dried-flowers",
+      "name_en": "Dried Flowers",
+      "name_ar": "زهور مجففة"
+    },
+    "short_description_en": "Hand-picked intact flower heads (>95%) with dense bisabolol and apigenin content.",
+    "short_description_ar": "أزهار بابونج ذهبية كاملة الرؤوس بنسبة تفوق 95% غنية بالأبيجينين للتهدئة والاسترخاء.",
+    "description_en": "World-famous Egyptian chamomile grown in Fayoum and Beni Suef alluvial soil. Known globally for its sweet apple nuance and rich soothing essential oils.",
+    "description_ar": "أشهر أنواع البابونج في العالم من حوض النيل والفيوم، برائحة تفاحية مميزة ونسبة نقاء وزيوت طيارة مطابقة للمواصفات الألمانية.",
+    "form": "Whole Heads & Siftings",
+    "purity": "98.5%",
+    "moisture": "< 9.0%",
+    "origin": "Fayoum & Middle Egypt",
+    "color": "Golden Yellow with White Petals",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/chamomile.jpg",
+    "images": [
+      "/images/products/chamomile.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "cilantro",
+    "name_en": "Dried Cilantro Leaves (Coriander Herb)",
+    "name_ar": "كزبرة خضراء مجففة (سيلانترو)",
+    "latin_name": "Coriandrum sativum",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Vibrant green rubbed cilantro leaves with delicate savory-citrus botanical nuance.",
+    "short_description_ar": "أوراق كزبرة خضراء مجففة ومفروزة بنكهة عشبية حمضية محببة للتطبيقات الغذائية.",
+    "description_en": "Carefully dehydrated to protect the fragile aromatic compounds. Essential for salsa seasoning, Latin and Asian spice blends, and herb mixes.",
+    "description_ar": "مجففة بتقنيات حديثة لحماية النكهة الأصلية واللون الأخضر الزاهي، مخصصة لمصانع الأغذية وتوليفات التوابل.",
+    "form": "Rubbed Flakes (1-3mm)",
+    "purity": "99.2%",
+    "moisture": "< 7.5%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Deep Vibrant Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/cilantro.jpg",
+    "images": [
+      "/images/products/cilantro.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "dill",
+    "name_en": "Organic Dill Tips & Weed",
+    "name_ar": "شبت أخضر مجفف (أطراف منقاة)",
+    "latin_name": "Anethum graveolens",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Intensely green rubbed dill tips with characteristic sweet anise-savory aroma.",
+    "short_description_ar": "أطراف شبت بلدي بلون أخضر نضر ونكهة عطرية مميزة لتتبيل الأسماك والأجبان.",
+    "description_en": "Separated from coarse stems and color-sorted. Ideal for European fish seasoning, pickle formulations, and herb dip blends.",
+    "description_ar": "مفرزة تماماً من السيقان والشوائب، معقمة ومطابقة للاشتراطات الميكروبيولوجية الأوروبية لتتبيل الأسماك والمخللات.",
+    "form": "Rubbed Tips (1-3mm)",
+    "purity": "99.4%",
+    "moisture": "< 7.5%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Bright Emerald Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/dill.jpg",
+    "images": [
+      "/images/products/dill.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "hibiscus",
+    "name_en": "Aswan Ruby Hibiscus (Whole Calyces)",
+    "name_ar": "كركديه أسواني ياقوتي (بتلات كاملة)",
+    "latin_name": "Hibiscus sabdariffa",
+    "category": {
+      "id": 4,
+      "slug": "dried-flowers",
+      "name_en": "Dried Flowers",
+      "name_ar": "زهور مجففة"
+    },
+    "short_description_en": "Deep scarlet intact calyces packed with natural anthocyanins and tart refreshing flavor.",
+    "short_description_ar": "زهور كركديه ياقوتية داكنة مجففة شمسياً وغنية بمضادات الأكسدة لنكهة منعشة فاخرة.",
+    "description_en": "Harvested from Upper Egypt (Aswan), naturally dehydrated without sulfur or chemical treatment. Renowned for its rich ruby infusion, cardiovascular wellness, and iced tea base.",
+    "description_ar": "كركديه أسواني فاخر مجفف طبيعياً بدون أي معالجة بالكبريت، يعطي لوناً ياقوتياً ناصعاً ومذاقاً حمضياً لذيذاً للشاي الطبيعي.",
+    "form": "Whole Calyces, Cut, Fine Siftings",
+    "purity": "99.2%",
+    "moisture": "< 8.5%",
+    "origin": "Aswan & Upper Egypt",
+    "color": "Deep Ruby Scarlet",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/hibiscus.jpg",
+    "images": [
+      "/images/products/hibiscus.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "lemon-grass",
+    "name_en": "Egyptian Lemon Grass Stalks",
+    "name_ar": "حشيشة الليمون (ليمون جراس)",
+    "latin_name": "Cymbopogon citratus",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Clean cut lemon grass with potent citral essential oil aroma and sweet herbal finish.",
+    "short_description_ar": "عيدان وأوراق ليمون جراس مجففة برائحة ليمونية زكية لخلطات الشاي والاسترخاء.",
+    "description_en": "Cultivated along the fertile Nile, chopped and dehydrated immediately to prevent browning. Essential for wellness infusions, Asian culinary stocks, and fragrance distillation.",
+    "description_ar": "محصودة ومجففة فوراً للحفاظ على المركبات العطرية واللون الأخضر الفاتح، خالية من أي مبيدات أو شوائب.",
+    "form": "Cut (0.5cm - 1cm) & T.B.C.",
+    "purity": "99.0%",
+    "moisture": "< 8.0%",
+    "origin": "Middle Egypt",
+    "color": "Pale Lime Green / Straw",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/lemon_grass.jpg",
+    "images": [
+      "/images/products/lemon_grass.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "liquorice",
+    "name_en": "Egyptian Natural Liquorice Root",
+    "name_ar": "عرقسوس مصري طبيعي (جذور وقضبان)",
+    "latin_name": "Glycyrrhiza glabra",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Sweet unpeeled root sticks and crushed chips with high glycyrrhizin concentration.",
+    "short_description_ar": "جذور عرقسوس طبيعية غنية بمادة الجليسيريزين ذات الحلاوة الطبيعية والخصائص الهضمية.",
+    "description_en": "Natural root harvested from alluvial soils, washed, sun-cured, and crushed or packed whole. Used in classic Egyptian Ramadan beverages, confectionery, and medicinal pectorals.",
+    "description_ar": "جذور نقية منتقاة ومجففة شمسياً، تستخدم لصناعة المشروبات التقليدية ومستخلصات الحلق والمكملات الهضمية.",
+    "form": "Crushed Root, Sticks, Fine Powder",
+    "purity": "99.0%",
+    "moisture": "< 8.5%",
+    "origin": "Nile Valley & Oasis",
+    "color": "Earthy Brown / Yellow Fibers",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/liquorice.jpg",
+    "images": [
+      "/images/products/liquorice.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "marjoram",
+    "name_en": "Organic Sweet Marjoram Leaves",
+    "name_ar": "بردقوش النيل الحلو العضوي",
+    "latin_name": "Origanum majorana",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Velvety grey-green rubbed leaves with sweet piney aroma and >1.6% volatile oil.",
+    "short_description_ar": "أوراق بردقوش مخملية ناعمة بنكهة دافئة وزيوت طيارة تفوق 1.6% لتنظيم الهرمونات.",
+    "description_en": "Triple optical cleaned to remove heavy stems and foreign organic matter. Certified organic crop compliant with EU MRL limits for pesticide-free peace of mind.",
+    "description_ar": "مفروز ضوئياً ومجفف بالطاقة الشمسية، يستخدم لتوليفات التوابل الإيطالية وشاي الأعشاب المهدئ ومطابق لدستور الأدوية الأوروبي.",
+    "form": "Rubbed & Crushed Leaves",
+    "purity": "99.7%",
+    "moisture": "< 7.5%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Soft Velvety Grey-Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/marjoram.jpg",
+    "images": [
+      "/images/products/marjoram.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "moringa",
+    "name_en": "Organic Moringa Oleifera Leaves",
+    "name_ar": "أوراق مورينجا عضوية (شجرة الحياة)",
+    "latin_name": "Moringa oleifera",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Superfood dried green leaves packed with complete plant proteins, calcium, and vitamins.",
+    "short_description_ar": "أوراق مورينجا عضوية نقية غنية بالفيتامينات والمعادن ومضادات الأكسدة للصحة المتكاملة.",
+    "description_en": "Dehydrated in hygienic enclosed solar tunnels to prevent nutrient degradation. Highly valued as a botanical superfood for capsules, wellness powders, and teas.",
+    "description_ar": "مجففة في أنفاق شمسية معقمة لحماية الكلوروفيل والفيتامينات، تعد غذاءً خارقاً للمكملات الغذائية والشاي الصحي.",
+    "form": "Whole Leaf, Crushed, Micronized Powder",
+    "purity": "99.6%",
+    "moisture": "< 6.5%",
+    "origin": "Beni Suef & Upper Egypt",
+    "color": "Vibrant Deep Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/moringa.jpg",
+    "images": [
+      "/images/products/moringa.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "oregano",
+    "name_en": "Mediterranean Oregano Leaves",
+    "name_ar": "أوريجانو متوسطي مجفف (زعتر بري)",
+    "latin_name": "Origanum vulgare",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Robust pungent rubbed leaves with high carvacrol content for gourmet seasoning.",
+    "short_description_ar": "أوراق أوريجانو عطرية بنكهة حارة غنية بمركب الكارفاكرول لتتبيل البيتزا والأغذية الإيطالية.",
+    "description_en": "Harvested during flowering for peak terpene concentration. Cleaned through vibratory sieves and magnetic separators to ensure pure export grade.",
+    "description_ar": "محصود في قمة موسم الإزهار لأعلى تركيز للزيوت الفعالة، مفروز ومغربل ومطابق لمعايير مصانع الصلصات والأغذية الأوروبية.",
+    "form": "Rubbed & Crushed Cut",
+    "purity": "99.5%",
+    "moisture": "< 7.8%",
+    "origin": "Middle Egypt",
+    "color": "Muted Sage Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/oregano.jpg",
+    "images": [
+      "/images/products/oregano.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "parsley",
+    "name_en": "Egyptian Green Parsley Flakes",
+    "name_ar": "بقدونس مصري أخضر مجفف",
+    "latin_name": "Petroselinum crispum",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Bright green rubbed flakes with fresh herbal flavor, free of thick stems and dust.",
+    "short_description_ar": "رقائق بقدونس أخضر نضر مجفف ومفرز بعناية لتزيين وتتبيل الوجبات الغذائية.",
+    "description_en": "Washed, hygienic solar-dehydrated, and optical-sorted. Meets strict microbiological standards for instant noodle seasonings, canned soups, and spice jars.",
+    "description_ar": "مجفف ومفرز بأحدث التقنيات لضمان النظافة الميكروبيولوجية وخلوه التام من أي بقايا كيميائية، جاهز للتصدير الفوري.",
+    "form": "Rubbed Flakes (2-4mm)",
+    "purity": "99.8%",
+    "moisture": "< 7.0%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Vivid Emerald Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/parsley.jpg",
+    "images": [
+      "/images/products/parsley.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "peppermint",
+    "name_en": "Egyptian Peppermint Leaves (T.B.C.)",
+    "name_ar": "نعناع فلفلي مصري (مجروش وتفل شاي)",
+    "latin_name": "Mentha piperita",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Sharp crisp menthol aroma (>2.2% oil), steam-sterilized for European herbal tea packing.",
+    "short_description_ar": "نعناع فلفلي نقي بنسبة زيت منثول تتجاوز 2.2% معقم بالبخار ومفرز لأكياس الشاي الفاخر.",
+    "description_en": "Cultivated in fertile alluvial soil in Beni Suef. Harvested at high noon when menthol oil reaches zenith. Screened to exact tea bag cut (T.B.C.) 1-3mm specifications.",
+    "description_ar": "أوراق نعناع فلفلي بنكهة منثول باردة ومنعشة، معقمة بالبخار وخالية من السالمونيلا ومطابقة لاشتراطات كبرى شركات الشاي الألمانية والبريطانية.",
+    "form": "Crushed, T.B.C. (1-3mm), Whole Leaf",
+    "purity": "99.8%",
+    "moisture": "< 7.5%",
+    "origin": "Beni Suef Farms, Egypt",
+    "color": "Rich Dark Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/peppermint.jpg",
+    "images": [
+      "/images/products/peppermint.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "rose-bud",
+    "name_en": "Damask Rose Buds & Petals",
+    "name_ar": "برعم ورد دمشقي مجفف",
+    "latin_name": "Rosa damascena",
+    "category": {
+      "id": 4,
+      "slug": "dried-flowers",
+      "name_en": "Dried Flowers",
+      "name_ar": "زهور مجففة"
+    },
+    "short_description_en": "Whole intact pink-crimson rose buds with intoxicating natural floral perfume.",
+    "short_description_ar": "براعم ورد بلدي كاملة وسليمة برائحة عطرية فواحة لتوليفات الشاي والزينة الفاخرة.",
+    "description_en": "Hand-picked before dawn and gently shade-dried to keep petals closed and volatile oils sealed within. Extensively used in gourmet teas, potpourri, and confectionery.",
+    "description_ar": "مجمعة يدوياً قبل بزوغ الشمس ومجففة في الظل للحفاظ على تماسك البراعم واللون الوردي الساحر والرائحة العطرية الزكية.",
+    "form": "Whole Closed Buds & Clean Petals",
+    "purity": "99.0%",
+    "moisture": "< 8.5%",
+    "origin": "Fayoum & Middle Egypt",
+    "color": "Deep Rose Pink & Crimson",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/rose_bud.jpg",
+    "images": [
+      "/images/products/rose_bud.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "rosemary",
+    "name_en": "Egyptian Aromatic Rosemary",
+    "name_ar": "روزماري مصري عطر (إكليل الجبل)",
+    "latin_name": "Rosmarinus officinalis",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Whole needle leaves with intense camphoraceous pine aroma and >1.5% volatile oil.",
+    "short_description_ar": "أوراق روزماري إبرية كاملة برائحة صنوبرية قوية غنية بمضادات الأكسدة وحمض الروزمارينيك.",
+    "description_en": "Thrives in sunny well-drained Egyptian soil. Rich in carnosic and rosmarinic acids, making it a natural antioxidant preservative for meat products and oils.",
+    "description_ar": "تزرع في تربة جيدة الصرف تحت شمس مصر الساطعة، غنية بمضادات الأكسدة الطبيعية وتستخدم لحفظ اللحوم وتنكيه الأغذية ومستحضرات الشعر.",
+    "form": "Whole Needles & Cut",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Middle Egypt",
+    "color": "Silvery Forest Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/rosemary.jpg",
+    "images": [
+      "/images/products/rosemary.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "sage",
+    "name_en": "Natural Egyptian Sage (Salvia)",
+    "name_ar": "مرمرية مصرية طبيعية (مريمية)",
+    "latin_name": "Salvia officinalis",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Velvety silver-green leaves with pungent thujone and cineole herbal essence.",
+    "short_description_ar": "أوراق مرمرية مخملية فضية بنكهة دافئة مطهرة للمعدة وتخفيف التقلصات.",
+    "description_en": "Shade-cured whole leaves retaining natural velvety hair and rich terpene bouquet. Famous for digestive teas, throat soothers, and poultry stuffings.",
+    "description_ar": "مجففة بعناية للحفاظ على الملمس المخملي واللون الفضي والزيوت الطيارة، تستخدم تقليدياً لصحة الجهاز الهضمي والغرغرة وتتبيل الأغذية.",
+    "form": "Whole Leaves & Crushed Cut",
+    "purity": "99.2%",
+    "moisture": "< 8.0%",
+    "origin": "Sinai & Nile Basin",
+    "color": "Soft Silvery Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/sage.jpg",
+    "images": [
+      "/images/products/sage.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "senna-makki",
+    "name_en": "Alexandrian Senna Makki",
+    "name_ar": "سنا مكي إسكندراني نقي",
+    "latin_name": "Senna alexandrina",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Pharmacopoeia grade dried senna leaves and whole pods with verified sennoside content.",
+    "short_description_ar": "أوراق وقرون سنامكي إسكندراني طبية نقية بنسب سنوسيدات معتمدة لتنظيف القولون.",
+    "description_en": "Native botanical harvested in southern Egypt and Sudan border. Clinically recognized worldwide as an effective natural laxative in herbal pharmacopoeias.",
+    "description_ar": "محصول تاريخي مصري جنوبي معتمد في دساتير الأدوية العالمية كملين ومطهر طبيعي للقولون والجهاز الهضمي، مفرز ومطابق للتحاليل.",
+    "form": "Whole Leaves, Whole Pods, T.B.C.",
+    "purity": "99.0%",
+    "moisture": "< 8.0%",
+    "origin": "Upper Egypt / Aswan",
+    "color": "Yellowish Pale Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/senna_makki.jpg",
+    "images": [
+      "/images/products/senna_makki.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "spearmint",
+    "name_en": "Sweet Nile Spearmint Leaves",
+    "name_ar": "نعناع بلدي مصري حلو (سبيارمينات)",
+    "latin_name": "Mentha spicata",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Naturally sweet carved leaves rich in carvone oil, ideal for Moroccan and Mediterranean teas.",
+    "short_description_ar": "أوراق نعناع بلدي مصري حلو غنية بزيت الكارفون للشاي الأخضر ومشروبات الضيافة.",
+    "description_en": "Authentic Egyptian garden spearmint with smooth sweet aroma free of harsh menthol bite. The foundational component of authentic Maghrebi mint tea and chewing gum flavoring.",
+    "description_ar": "نعناع بلدي بنكهة سكرية عذبة محببة خالية من حدة المنثول، مفرز ضوئياً ومجفف بعناية للشاي الأخضر وتنكيه الأغذية.",
+    "form": "Crushed & Whole Leaves",
+    "purity": "99.8%",
+    "moisture": "< 7.5%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Vibrant Medium Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/spearmint.jpg",
+    "images": [
+      "/images/products/spearmint.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "thyme",
+    "name_en": "Wild Egyptian Thyme",
+    "name_ar": "زعتر مصري بري عطر",
+    "latin_name": "Thymus vulgaris",
+    "category": {
+      "id": 1,
+      "slug": "herbs",
+      "name_en": "Herbs",
+      "name_ar": "أعشاب"
+    },
+    "short_description_en": "Tiny fragrant whole leaves and rubbed tips with high thymol antiseptic potency.",
+    "short_description_ar": "أوراق زعتر بري صغيرة عطرية غنية بزيت الثيمول المطهر والمقوي للمناعة.",
+    "description_en": "Grown under arid Mediterranean breezes, building concentrated thymol and carvacrol defenses. Packaged for bulk seasoning blends, marinades, and cough syrups.",
+    "description_ar": "زعتر بري مجفف ومفرز بعناية، يتميز برائحة نفاذة ونقاء فائق لتوليفات الدقة والزعتر والمخبوزات والمستحضرات الطبية.",
+    "form": "Rubbed Tips (1-2mm) & Whole",
+    "purity": "99.5%",
+    "moisture": "< 7.5%",
+    "origin": "Middle Egypt",
+    "color": "Greyish Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/thyme.jpg",
+    "images": [
+      "/images/products/thyme.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "verbascum",
+    "name_en": "Verbascum (Mullein Flowers & Leaves)",
+    "name_ar": "بوصير (عشبة آذان الدب)",
+    "latin_name": "Verbascum thapsus",
+    "category": {
+      "id": 4,
+      "slug": "dried-flowers",
+      "name_en": "Dried Flowers",
+      "name_ar": "زهور مجففة"
+    },
+    "short_description_en": "Golden mullein dried flowers and soft velvety leaves for respiratory and lung wellness.",
+    "short_description_ar": "أزهار وأوراق نبات البوصير الذهبي المجففة لصحة الجهاز التنفسي والتهدئة.",
+    "description_en": "Valued in classical European and Middle Eastern herbalism for soothing chest and bronchial infusions. Free from dust, gentle air-cleaned.",
+    "description_ar": "نبات عشبي مهدئ للشعب الهوائية والسعال، منتقى ومجفف بعناية فائقة لتوليفات الشاي الطبي الصدري.",
+    "form": "Whole Flowers & Cut Leaf",
+    "purity": "98.5%",
+    "moisture": "< 8.5%",
+    "origin": "Oasis & Middle Egypt",
+    "color": "Soft Golden Yellow / Pale Green",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/verbascum.jpg",
+    "images": [
+      "/images/products/verbascum.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "cinnamon",
+    "name_en": "Pure Cinnamon Bark & Quills",
+    "name_ar": "قرفة خشب عيدان ومطحونة",
+    "latin_name": "Cinnamomum verum",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Aromatic curled bark quills and micro-milled powder with rich cinnamaldehyde aroma.",
+    "short_description_ar": "أعواد قرفة طبيعية ملفوفة وبودرة مطحونة برائحة حلوة دافئة غنية بمضادات الأكسدة.",
+    "description_en": "Cleaned, fumigated, and graded by quill diameter. Essential for bakery formulations, warm beverage infusions, and premium curry spice blending.",
+    "description_ar": "أعواد قرفة منتقاة بأقطار متجانسة وخالية من الرطوبة، تمنح نكهة حلوة دافئة للمخبوزات والمشروبات والمطبخ العالمي.",
+    "form": "Whole Quills (8-10cm) & Ground",
+    "purity": "99.5%",
+    "moisture": "< 9.0%",
+    "origin": "Graded & Processed in Egypt",
+    "color": "Warm Reddish Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/cinnamon.jpg",
+    "images": [
+      "/images/products/cinnamon.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "clove",
+    "name_en": "Whole Aromatic Cloves",
+    "name_ar": "قرنفل مسمار كامل (حب)",
+    "latin_name": "Syzygium aromaticum",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Intact flower buds with plump heads and >18% eugenol oil content for culinary and oral care.",
+    "short_description_ar": "حبات قرنفل مسمار كاملة الرؤوس بنسبة زيت يوجينول تفوق 18% للنكهة والتسكين الطبيعي.",
+    "description_en": "Grade A hand-picked cloves with crown intact and low headless count (<2%). Imparts intense warm numbing spice aroma.",
+    "description_ar": "قرنفل درجة أولى ممتاز برؤوس سليمة كاملة ونسبة زيوت طيارة استثنائية لصناعات الأغذية والمشروبات ومستحضرات الأسنان.",
+    "form": "Whole Hand-Picked Buds",
+    "purity": "99.2%",
+    "moisture": "< 8.5%",
+    "origin": "Imported & Optical Processed in Egypt",
+    "color": "Deep Mahogany Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/clove.jpg",
+    "images": [
+      "/images/products/clove.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "ginger",
+    "name_en": "Dried Ginger Rhizomes & Powder",
+    "name_ar": "جنزبيل مجفف ومطحون فاخر",
+    "latin_name": "Zingiber officinale",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Pungent sun-cured ginger roots with intense gingerol heat and golden yellow color.",
+    "short_description_ar": "جذور جنزبيل مجففة وبودرة ناعمة بنكهة حارة لاذعة وخصائص منشطة للهضم.",
+    "description_en": "Washed, peeled, and sun-dehydrated. Available as whole peeled fingers, cut flakes, or finely ground mesh powder. High gingerol content verified.",
+    "description_ar": "مغسول ومجفف بعناية ومطحون بدرجة نعومة فائقة، خالٍ من الألياف الخشنة ومطابق لمعايير مصانع الأغذية والمشروبات الساخنة.",
+    "form": "Peeled Whole Fingers, Flakes, Powder",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Egyptian Export Facility Graded",
+    "color": "Creamy Pale Golden Yellow",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/ginger.jpg",
+    "images": [
+      "/images/products/ginger.jpg"
+    ]
+  },
+  {
+    "id": 31,
+    "slug": "chili",
+    "name_en": "Egyptian Fiery Red Chili",
+    "name_ar": "فلفل حار (شطة حمراء مجففة)",
+    "latin_name": "Capsicum annuum",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Fiery whole dried red chilies and crushed chili flakes (30,000 - 50,000 SHU).",
+    "short_description_ar": "قرون شطة حمراء كاملة ومجروشة بدرجة حرارة محسوبة (30,000 - 50,000 وحدة حرارية).",
+    "description_en": "Grown under Upper Egyptian desert sun for maximum capsaicin development. Vibrant red pigmentation, optical cleaned to remove yellow seeds and dust.",
+    "description_ar": "شطة مجففة تحت شمس الصعيد الساطعة لاكتساب اللون الأحمر القاني والحرارة العالية، متوفرة كقرون كاملة أو مجروشة أو ناعمة.",
+    "form": "Whole Pods with Stem, Crushed Flakes, Powder",
+    "purity": "99.4%",
+    "moisture": "< 8.0%",
+    "origin": "Upper Egypt (Qena / Luxor)",
+    "color": "Intense Deep Scarlet Red",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/chili.jpg",
+    "images": [
+      "/images/products/chili.jpg"
+    ]
+  },
+  {
+    "id": 32,
+    "slug": "dried-black-lemon",
+    "name_en": "Sun-Dried Black Lemon (Loomi)",
+    "name_ar": "ليمون أسود مجفف (لومي)",
+    "latin_name": "Citrus aurantiifolia",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Traditional sun-cured black limes with complex smoky, tart, fermented citrus flavor.",
+    "short_description_ar": "ليمون أسود مجفف شمسياً بنكهة حمضية مدخنة مميزة لأطباق الكبسة واليخنات الخليجية.",
+    "description_en": "Whole ripe limes boiled in brine and left to sun-cure until exterior and interior ferment to jet black. Indispensable for Gulf and Middle Eastern rice and meat dishes.",
+    "description_ar": "حبات لومي مجففة شمسياً حتى اكتمال التخمر الداخلي الطبيعي، تمنح الأطباق نكهة حموضة مدخنة أصيلة وغنية بفيتامين سي.",
+    "form": "Whole Dried Fruits & Crushed/Powder",
+    "purity": "99.0%",
+    "moisture": "< 7.5%",
+    "origin": "Processed in Egypt",
+    "color": "Charcoal Black / Dark Ebony",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/dried_black_lemon.jpg",
+    "images": [
+      "/images/products/dried_black_lemon.jpg"
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "garlic",
+    "name_en": "Dehydrated Egyptian Garlic",
+    "name_ar": "ثوم مصري مجفف ومطحون",
+    "latin_name": "Allium sativum",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Pungent allicin-rich dehydrated garlic available in minced flakes, granules, and powder.",
+    "short_description_ar": "ثوم بلدي مصري مجفف ومفروم بنكهة قوية غنية بالأليسين للصناعات الغذائية والتوابل.",
+    "description_en": "Famous Beni Suef garlic known for high dry matter and pungent flavor profile. Cleaned, sliced, dehydrated, and metal-detected to international export specifications.",
+    "description_ar": "ثوم بلدي من مزارع بني سويف ذات التربة الطينية الغنية، مجفف آلياً وخالٍ من أي مواد حافظة أو تكتل، بنكهة مضاعفة القوة.",
+    "form": "Flakes, Granules (40-60 mesh), Fine Powder",
+    "purity": "99.9%",
+    "moisture": "< 6.0%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Creamy Off-White / Pale Ivory",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/garlic.jpg",
+    "images": [
+      "/images/products/garlic.jpg"
+    ]
+  },
+  {
+    "id": 34,
+    "slug": "onion",
+    "name_en": "Dehydrated Egyptian Golden Onion",
+    "name_ar": "بصل مصري ذهبي مجفف ومطحون",
+    "latin_name": "Allium cepa",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Sweet-savory dehydrated onion flakes, kibbled slices, and free-flowing powder.",
+    "short_description_ar": "بصل ذهبي مصري مجفف ومفروم ورقائق بنكهة سكرية مركزة وسهولة تامة في الاستخدام.",
+    "description_en": "Golden Egyptian onions dehydrated at state-of-the-art processing plants. Retains sweet caramelized notes upon cooking, widely used in snack seasonings and soups.",
+    "description_ar": "بصل ذهبي بلدي مجفف بتقنيات حديثة تضمن النقاء التام واللون الذهبي الجذاب والنكهة الذكية دون أي مرارة.",
+    "form": "Kibbled (Chopped), Minced, Granules, Powder",
+    "purity": "99.9%",
+    "moisture": "< 6.0%",
+    "origin": "Middle Egypt",
+    "color": "Golden Cream / Amber",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/onion.jpg",
+    "images": [
+      "/images/products/onion.jpg"
+    ]
+  },
+  {
+    "id": 35,
+    "slug": "yellow-lemon-dried",
+    "name_en": "Dried Yellow Lemon Slices",
+    "name_ar": "ليمون أصفر مجفف (شرائح)",
+    "latin_name": "Citrus limon",
+    "category": {
+      "id": 3,
+      "slug": "spices",
+      "name_en": "Spices",
+      "name_ar": "توابل وبهارات"
+    },
+    "short_description_en": "Dehydrated intact yellow lemon wheels and whole lemons with crisp citric brightness.",
+    "short_description_ar": "شرائح ليمون أصفر كاملة مجففة طبيعياً لتزيين المشروبات والشاي وتوليفات الأعشاب.",
+    "description_en": "Uniformly sliced Egyptian yellow lemons dehydrated gently to preserve sunny translucent color and natural vitamin C. Perfect for tea blending, cocktail garnishes, and culinary seasoning.",
+    "description_ar": "شرائح متجانسة مجففة بعناية للحفاظ على اللون الأصفر الزاهي ونقاء الحموضة الطبيعية، خالية من أي مواد كبريتية.",
+    "form": "Round Slices (Wheels) & Whole Dried",
+    "purity": "99.5%",
+    "moisture": "< 7.5%",
+    "origin": "Nile Valley Citrus Groves",
+    "color": "Bright Translucent Golden Yellow",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/yellow_lemon_dried.jpg",
+    "images": [
+      "/images/products/yellow_lemon_dried.jpg"
+    ]
+  },
+  {
+    "id": 36,
+    "slug": "golden-sesame",
+    "name_en": "Premium Golden Sesame Seeds",
+    "name_ar": "سمسم ذهبي مصري فاخر",
+    "latin_name": "Sesamum indicum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Unhulled golden sesame seeds with high oil content (>52%) and rich nutty crunch.",
+    "short_description_ar": "بذور سمسم ذهبي بلدي غنية بالزيوت المفيدة بنسبة تفوق 52% ونكهة مكسرات لذيذة.",
+    "description_en": "Natural Egyptian golden sesame harvested in Upper Egypt. Mechanically cleaned to 99.9% purity through multiple air aspirators and gravity destoners.",
+    "description_ar": "سمسم بلدي فاخر من مزارع الصعيد، مفروز ومغربل بنقاوة 99.9% وخالٍ من الشوائب، مثالي لصناعة الحلاوة الطحينية والمخبوزات.",
+    "form": "Whole Natural Unhulled Seeds",
+    "purity": "99.9%",
+    "moisture": "< 6.0%",
+    "origin": "Upper Egypt (Assiut / Sohag)",
+    "color": "Golden Amber",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/golden_sesame.jpg",
+    "images": [
+      "/images/products/golden_sesame.jpg"
+    ]
+  },
+  {
+    "id": 37,
+    "slug": "anise",
+    "name_en": "Egyptian Sweet Aniseed",
+    "name_ar": "ينسون مصري بلدي فاخر",
+    "latin_name": "Pimpinella anisum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Triple-cleaned green-grey oval aniseeds with rich sweet anethole aroma (>2.4% oil).",
+    "short_description_ar": "بذور ينسون بلدي نقية برائحة زكية ونسبة زيت طيار تتجاوز 2.4% لراحة الجهاز الهضمي.",
+    "description_en": "World-renowned Egyptian anise cultivated in Middle Egypt. Triple-sifted on vibrating sieves and optical color sorters to eliminate stems, weed seeds, and dust.",
+    "description_ar": "ينسون بلدي فاخر مطابق لدستور الأدوية الأوروبي، غني بزيت الأنيثول العطري، خفيف ومريح للمعدة ومفضل في المشروبات العائلية.",
+    "form": "Whole Selected Seeds",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Beni Suef & Minya, Egypt",
+    "color": "Greenish Grey-Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/anise.jpg",
+    "images": [
+      "/images/products/anise.jpg"
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "caraway",
+    "name_en": "Egyptian Export Grade Caraway Seeds",
+    "name_ar": "كراوية مصرية درجة تصدير أولى",
+    "latin_name": "Carum carvi",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Curved ribbed dark brown seeds with sharp carvon aroma (>3.0% volatile oil).",
+    "short_description_ar": "بذور كراوية منتقاة بنسبة زيت طيار تتجاوز 3% ومفروزة ليزرياً لصحة الأطفال والرضع.",
+    "description_en": "Handled through modern optical sorters to guarantee absence of weed seeds and stones. Popular across Eastern Europe for rye breads, sauerkraut, and digestif spirits.",
+    "description_ar": "كراوية مصرية مفرزة هوائياً وبأجهزة الليزر، خالية من بذور الحشائش والحصى، تستخدم تقليدياً لتهدئة الرضع ومخبوزات الجودار الأوروبية.",
+    "form": "Whole Seeds (Grade A)",
+    "purity": "99.8%",
+    "moisture": "< 8.0%",
+    "origin": "Beni Suef & Fayoum, Egypt",
+    "color": "Dark Striped Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/caraway.jpg",
+    "images": [
+      "/images/products/caraway.jpg"
+    ]
+  },
+  {
+    "id": 39,
+    "slug": "celery-seeds",
+    "name_en": "Whole Celery Seeds",
+    "name_ar": "بذور كرفس بلدي كاملة",
+    "latin_name": "Apium graveolens",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Minute aromatic brown seeds with concentrated savory celery and sedanolide flavor.",
+    "short_description_ar": "بذور كرفس عطرية دقيقة بنكهة قوية غنية بالسيدانوليد لصحة المفاصل وتتبيل الأغذية.",
+    "description_en": "Cleaned through precision micro-screens. Highly prized for pickling spice formulations, spice salts, and traditional uric acid joint relief blends.",
+    "description_ar": "بذور كرفس صغيرة عالية النقاء منقاة بغرابيل ميكرونية دقيقة، تستخدم لتتبيل المخللات وتخفيض حمض اليوريك وأملاح المفاصل.",
+    "form": "Whole Tiny Seeds",
+    "purity": "99.2%",
+    "moisture": "< 7.5%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Warm Earth Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/celery_seeds.jpg",
+    "images": [
+      "/images/products/celery_seeds.jpg"
+    ]
+  },
+  {
+    "id": 40,
+    "slug": "coriander",
+    "name_en": "Whole Golden Coriander Seeds",
+    "name_ar": "كزبرة جافة مصرية (حب كامل)",
+    "latin_name": "Coriandrum sativum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Uniform round golden spheres with sweet citrus-woody nuance and >0.8% essential oil.",
+    "short_description_ar": "حبات كزبرة كروية ذهبية متجانسة برائحة ليمونية عطرية لتتبيل اللحوم وتوليفات الكاري.",
+    "description_en": "Machine cleaned and size-graded. Low split percentage (<5%), free of pesticide residues, compliant with EU and Gulf standards for whole and ground spices.",
+    "description_ar": "كزبرة حب بلدي مفرزة ومغسولة ومجففة، بنسبة حبات مكسورة أقل من 5%، خالية من متبقيات المبيدات ومطابقة للمواصفات الدولية.",
+    "form": "Whole Round Seeds & Coarse Split",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Middle Egypt",
+    "color": "Warm Golden Tan",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/coriander.jpg",
+    "images": [
+      "/images/products/coriander.jpg"
+    ]
+  },
+  {
+    "id": 41,
+    "slug": "cumin-seed",
+    "name_en": "Grade A Whole Cumin Seed",
+    "name_ar": "بذور كمون بلدي درجة تصدير أولى",
+    "latin_name": "Cuminum cyminum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Elongated striped seeds with warm earthy cuminaldehyde aroma and >2.5% oil yield.",
+    "short_description_ar": "بذور كمون بلدي مفرزة ليزرياً برائحة كمونية نفاذة ونسبة زيوت طيارة تفوق 2.5%.",
+    "description_en": "Primary export lot harvested in Upper Egypt. Destoned, gravity-tabled, and color-sorted to ensure 99.8% physical purity and zero foreign seeds.",
+    "description_ar": "كمون حب بلدي من مزارع أسيوط والوادي الجديد، معالج بطاولات الجاذبية وأجهزة الفرز الضوئي لضمان خلوه التام من الحصى والبذور الغريبة.",
+    "form": "Whole Elongated Seeds",
+    "purity": "99.8%",
+    "moisture": "< 7.5%",
+    "origin": "Upper Egypt / New Valley",
+    "color": "Striped Khaki Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/cumin_seed.jpg",
+    "images": [
+      "/images/products/cumin_seed.jpg"
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "cumin",
+    "name_en": "Pure Egyptian Ground Cumin",
+    "name_ar": "كمون مطحون مصري نقي",
+    "latin_name": "Cuminum cyminum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Micro-milled pure cumin powder with rich deep flavor and zero fillers or spent matter.",
+    "short_description_ar": "كمون مطحون نقي 100% بدون أي إضافات أو أتربة، بنكهة قوية غنية تدوم طويلاً.",
+    "description_en": "Milled in cold stainless steel hammer mills to prevent thermal oil loss. Certified 100% pure cumin with no adulteration or added starch.",
+    "description_ar": "مطحون على البارد في مطاحن ستانلس ستيل معقمة لمنع تطاير الزيوت العطرية، خالٍ تماماً من أي نشويات أو ملونات صناعية.",
+    "form": "Fine Mesh Powder (60-80 mesh)",
+    "purity": "99.9%",
+    "moisture": "< 7.0%",
+    "origin": "Upper Egypt",
+    "color": "Rich Warm Olive-Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/cumin.jpg",
+    "images": [
+      "/images/products/cumin.jpg"
+    ]
+  },
+  {
+    "id": 43,
+    "slug": "dill-seeds",
+    "name_en": "Cleaned Whole Dill Seeds",
+    "name_ar": "بذور شبت بلدي منقاة",
+    "latin_name": "Anethum graveolens",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Flat oval winged seeds with sweet carvon-caraway aroma for pickling and teas.",
+    "short_description_ar": "بذور شبت بيضاوية مفروزة بنكهة عشبية دافئة لصناعة المخللات وتوليفات الأعشاب الهضمية.",
+    "description_en": "Harvested from fully mature umbels. Cleaned with multi-deck aspirators to separate light hulls. Famous for cucumber pickling and carminative soothing teas.",
+    "description_ar": "مجمعة من مظلات الشبت الناضجة ومفرزة بأجهزة الشفط الهوائي لعزل القشور الفارغة، تستخدم لتتبيل المخللات وعلاج المغص.",
+    "form": "Whole Flat Oval Seeds",
+    "purity": "99.5%",
+    "moisture": "< 8.0%",
+    "origin": "Nile Basin, Egypt",
+    "color": "Light Brown with Cream Wings",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/dill_seeds.jpg",
+    "images": [
+      "/images/products/dill_seeds.jpg"
+    ]
+  },
+  {
+    "id": 44,
+    "slug": "fennel",
+    "name_en": "Sweet Egyptian Fennel Seeds",
+    "name_ar": "شمر حلو مصري (درجة تصدير أ)",
+    "latin_name": "Foeniculum vulgare",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Pale green oval seeds with sweet licorice nuancing and >2.0% anethole volatile oil.",
+    "short_description_ar": "بذور شمر حلو بلون أخضر فاتح ونسبة زيت طيار تفوق 2% مطابقة لدستور الأدوية الأوروبي.",
+    "description_en": "Triple-sifted Foeniculum vulgare seeds cultivated in Beni Suef alluvial basin. Compliant with European Pharmacopoeia standards, free from mold, insects, or pesticide residues.",
+    "description_ar": "بذور شمر حلو فاخرة مفرزة هوائياً وخالية من السوس والحشرات، برائحة ينسونية زكية لخلطات الرشاقة والهضم وصناعة الأدوية.",
+    "form": "Whole Plump Seeds",
+    "purity": "99.8%",
+    "moisture": "< 8.0%",
+    "origin": "Beni Suef, Egypt",
+    "color": "Greenish-Yellow Amber",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/fennel.jpg",
+    "images": [
+      "/images/products/fennel.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "slug": "fenugreek",
+    "name_en": "Golden Egyptian Fenugreek Seeds",
+    "name_ar": "حلبة بلدية مصرية ذهبية",
+    "latin_name": "Trigonella foenum-graecum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Rhomboid golden-yellow seeds rich in trigonelline, 4-hydroxyisoleucine, and soluble fiber.",
+    "short_description_ar": "بذور حلبة بلدية ذهبية منتقاة بعناية لضبط السكر ودعم الرضاعة الطبيعية.",
+    "description_en": "Grown in Upper Egypt, machine-destoned and sorted. Known for natural blood sugar modulation, lactation stimulation, and maple-like aroma upon roasting.",
+    "description_ar": "حلبة بلدية ذهبية من مزارع الصعيد، مفرزة من الحصى والشوائب بنقاوة 99.8%، غنية بالألياف الذائبة والخصائص المنشطة للصحة العامة.",
+    "form": "Whole Rhomboid Seeds",
+    "purity": "99.8%",
+    "moisture": "< 7.5%",
+    "origin": "Upper Egypt",
+    "color": "Golden Amber Yellow",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/fenugreek.jpg",
+    "images": [
+      "/images/products/fenugreek.jpg"
+    ]
+  },
+  {
+    "id": 46,
+    "slug": "flax-seeds",
+    "name_en": "Golden & Brown Flax Seeds (Linseed)",
+    "name_ar": "بذور كتان ذهبية وبنية (حب بذر الكتان)",
+    "latin_name": "Linum usitatissimum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Glossy teardrop seeds packed with plant-based Omega-3 (ALA) and dietary lignans.",
+    "short_description_ar": "بذور كتان لامعة غنية بأحماض أوميجا 3 النباتية والألياف لدعم صحة القلب والشعر.",
+    "description_en": "Historical Egyptian crop grown along the Nile for millenia. High cold-pressed oil yield, machine cleaned to 99.9% purity for bakeries and health food packaging.",
+    "description_ar": "محصول مصري تاريخي عريق، غني بالزيوت الصحية والأوميجا 3، مفرز بأعلى دقة ميكانيكية لشركات المخبوزات والمكملات الغذائية.",
+    "form": "Whole Glossy Seeds & Cold Milled",
+    "purity": "99.9%",
+    "moisture": "< 6.5%",
+    "origin": "Nile Delta & Middle Egypt",
+    "color": "Glossy Golden Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/flax_seeds.jpg",
+    "images": [
+      "/images/products/flax_seeds.jpg"
+    ]
+  },
+  {
+    "id": 47,
+    "slug": "nigella-sativa",
+    "name_en": "Nigella Sativa (Black Cumin / Habbat Al-Baraka)",
+    "name_ar": "حبة البركة (الحبة السوداء)",
+    "latin_name": "Nigella sativa",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Jet-black triangular seeds with potent thymoquinone content for immune vitality.",
+    "short_description_ar": "حبة البركة المصرية النقية غنية بمركب الثيموكينون لتقوية المناعة ومقاومة الالتهابات.",
+    "description_en": "Original Egyptian Nigella sativa harvested in Upper Egypt. Destoned and color-sorted to ensure 99.8% pure black seeds with high cold-pressed oil extraction yield.",
+    "description_ar": "حبة البركة الأصلية من صعيد مصر، مفروزة ليزرياً من أي شوائب أو حبوب بيضاء، تتميز بأعلى نسبة لزيت الثيموكينون الطبيعي المعجزة.",
+    "form": "Whole Triangular Matte Black Seeds",
+    "purity": "99.8%",
+    "moisture": "< 6.5%",
+    "origin": "Upper Egypt (Assiut / Qena)",
+    "color": "Matte Jet Black",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/nigella_sativa.jpg",
+    "images": [
+      "/images/products/nigella_sativa.jpg"
+    ]
+  },
+  {
+    "id": 48,
+    "slug": "white-sesame",
+    "name_en": "Premium White Hulled Sesame",
+    "name_ar": "سمسم أبيض مصري مقشور فاخر",
+    "latin_name": "Sesamum indicum",
+    "category": {
+      "id": 2,
+      "slug": "seeds",
+      "name_en": "Seeds",
+      "name_ar": "بذور"
+    },
+    "short_description_en": "Mechanically hulled pearly white sesame seeds with sweet delicate flavor and high purity.",
+    "short_description_ar": "سمسم أبيض مقشور آلياً بلون لؤلؤي ناصع ونقاوة 99.9% للمخبوزات والحلويات العالمية.",
+    "description_en": "Hulled using chemical-free wet friction technology and laser sorted. Premium cosmetic appearance for burger buns, fine confectionery, and gourmet tahini paste.",
+    "description_ar": "مقشور بتقنية الاحتكاك المائي بدون أي مواد كيميائية ومفروز بالليزر، حبات لؤلؤية متجانسة لأفخر المخابز وشركات الطحينة الدولية.",
+    "form": "Hulled Pure White Seeds",
+    "purity": "99.95%",
+    "moisture": "< 5.5%",
+    "origin": "Upper Egypt",
+    "color": "Pearly Pure White",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/white_sesame.jpg",
+    "images": [
+      "/images/products/white_sesame.jpg"
+    ]
+  },
+  {
+    "id": 49,
+    "slug": "lentils",
+    "name_en": "Grade A Egyptian Whole & Split Lentils",
+    "name_ar": "عدس مصري فاخر (عدس أصفر وأبو جبة)",
+    "latin_name": "Lens culinaris",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Polished red split and whole brown lentils, rich in plant protein, iron, and fiber.",
+    "short_description_ar": "عدس مصري مفروز بالليزر (أصفر مجروش وبني كامل) عالي البروتين والحديد.",
+    "description_en": "Cleaned through gravity tables and color optical sorters to ensure 99.9% purity and zero damaged kernels. Perfect for hearty soups, stews, and export packaging.",
+    "description_ar": "عدس منتقى ومصقول ومفروز ضوئياً بدون أي حبات مكسورة أو شوائب، طهي متجانس وقيمة غذائية وبروتينية عالية.",
+    "form": "Whole Brown & Dehulled Red Split",
+    "purity": "99.8%",
+    "moisture": "< 10.0%",
+    "origin": "Nile Basin Agricultural Farms",
+    "color": "Vibrant Coral Red & Earth Brown",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": true,
+    "image": "/images/products/lentils.jpg",
+    "images": [
+      "/images/products/lentils.jpg"
+    ]
+  },
+  {
+    "id": 50,
+    "slug": "chickpeas",
+    "name_en": "Organic Large Egyptian Chickpeas (Kabuli)",
+    "name_ar": "حمص مصري عضوي فاخر (كابولي حبة كبيرة)",
+    "latin_name": "Cicer arietinum",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Plump 8mm - 10mm calibrated Kabuli chickpeas with smooth skin and tender cooking texture.",
+    "short_description_ar": "حمص كابولي مصري حبة كبيرة (8-10 ملم) متجانس الحجم وسريع الطهي لصناعة الحمص الفاخر.",
+    "description_en": "Calibrated by millimeter sieve sizes (8mm, 9mm, 10mm). Excellent high-protein legume for gourmet hummus, salads, and canning operations worldwide.",
+    "description_ar": "حمص منتقى بأحجام عيارية دقيقة، قشرة ناعمة وطعم كريمي لذيذ، مطابق لأعلى مواصفات مصانع التعليب والمطاعم العالمية.",
+    "form": "Whole Calibrated Seeds (8mm, 9mm, 10mm)",
+    "purity": "99.8%",
+    "moisture": "< 9.5%",
+    "origin": "Middle Egypt",
+    "color": "Pale Creamy Tan",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/chickpeas.jpg",
+    "images": [
+      "/images/products/chickpeas.jpg"
+    ]
+  },
+  {
+    "id": 51,
+    "slug": "white-beans",
+    "name_en": "Egyptian White Kidney Beans (Cannellini)",
+    "name_ar": "فاصوليا بيضاء مصرية جافة (حبة عريضة)",
+    "latin_name": "Phaseolus vulgaris",
+    "category": {
+      "id": 5,
+      "slug": "botanicals",
+      "name_en": "Botanicals",
+      "name_ar": "نباتات طبية"
+    },
+    "short_description_en": "Glossy white kidney beans with delicate thin skins and tender, creamy texture.",
+    "short_description_ar": "فاصوليا بيضاء مصرية درجة أولى، حبات ممتلئة متجانسة وسريعة النضج للتصدير والتعليب.",
+    "description_en": "Hand-picked and laser-cleaned to eliminate broken, spotted, or discolored beans. Highly exported to Europe, the Mediterranean, and South America for canning and food service.",
+    "description_ar": "فاصوليا بيضاء جافة منتقاة ليزرياً من أي حبات متبقعة أو مشوهة، ممتازة للصناعات الغذائية والتوريد بالجملة للأسواق الدولية.",
+    "form": "Whole Selected Dry Beans (Grade A)",
+    "purity": "99.8%",
+    "moisture": "< 10.0%",
+    "origin": "Nile Delta & Valley",
+    "color": "Pure Porcelain White",
+    "packaging": "20kg/25kg Multi-Ply Kraft Paper Sacks with Poly Liner or 50kg PP Bags",
+    "shelf_life": "24 Months from harvest date in cool, dry stowed conditions",
+    "export_availability": "Year-Round Bulk Dispatch (FOB Alexandria / CIF Destination Ports)",
+    "certifications": [
+      "ISO 22000",
+      "ISO 9001",
+      "HACCP",
+      "USDA Organic",
+      "EU Organic",
+      "FDA Registered",
+      "HALAL"
+    ],
+    "is_featured": false,
+    "image": "/images/products/white_beans.jpg",
+    "images": [
+      "/images/products/white_beans.jpg"
+    ]
+  }
+]

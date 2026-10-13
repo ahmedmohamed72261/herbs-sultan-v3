@@ -1,0 +1,32 @@
+[
+  {
+    "id": "slide-1",
+    "title_en": "Direct Farm-to-Port Egyptian Botanical Export",
+    "title_ar": "تصدير المحاصيل والأعشاب الطبية مباشرة من حوض النيل للموانئ العالمية",
+    "subtitle_en": "Contract farming across 1,500+ certified organic feddans in Beni Suef and Fayoum alluvial basin.",
+    "subtitle_ar": "زراعات تعاقدية عضوية موثقة على مساحة أكثر من 1500 فدان في طمي النيل الخصب.",
+    "image": "/images/category/herbs.jpg",
+    "badge_en": "FOB Alexandria & CIF Global Ports",
+    "badge_ar": "شحن مباشر عبر الإسكندرية ودمياط"
+  },
+  {
+    "id": "slide-2",
+    "title_en": "Multi-Stage Optical Laser Sorting & GC-MS Purity",
+    "title_ar": "فرز ضوئي بالليزر وفحص كروماتوغرافي لضمان أعلى نقاوة فيزيائية وكيميائية",
+    "subtitle_en": "State-of-the-art European sorting lines ensuring 99.8%+ physical purity and undetectable pesticide residues.",
+    "subtitle_ar": "خطوط فرز أوروبية متطورة تضمن نقاوة تفوق 99.8% وخلو تام من متبقيات المبيدات وفق معايير الاتحاد الأوروبي.",
+    "image": "/images/category/spices.jpg",
+    "badge_en": "ISO 22000 & HACCP Certified",
+    "badge_ar": "اعتماد الأغذية العالمي"
+  },
+  {
+    "id": "slide-3",
+    "title_en": "Certified Organic Supply for Global Blenders",
+    "title_ar": "محاصيل عضوية معتمدة لكبرى شركات الشاي والصناعات الدوائية الدولية",
+    "subtitle_en": "Full lot traceability, USDA NOP and EU Organic compliance, with immediate DHL sample dispatches.",
+    "subtitle_ar": "تتبع كامل للشحنات ومطابقة تامة للوائح الزراعة العضوية الأمريكية والأوروبية مع إرسال عينات سريع عبر DHL.",
+    "image": "/images/category/seeds.jpg",
+    "badge_en": "USDA Organic & EU Compliant",
+    "badge_ar": "عضوي معتمد دولياً"
+  }
+]

@@ -14,8 +14,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         <style dangerouslySetInnerHTML={{ __html: `
           html, body {
+            overflow-x: hidden;
+            max-width: 100%;
             background-color: #ffffff;
             color: #333333;
             margin: 0;

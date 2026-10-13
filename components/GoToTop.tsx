@@ -6,7 +6,7 @@ import { useAppStore } from '@/store';
 export default function GoToTop() {
   const [isVisible, setIsVisible] = useState(false);
   const { language } = useAppStore();
-  const positionClass = language === 'ar' ? 'right-8' : 'left-8';
+  const positionClass = language === 'ar' ? 'right-4 sm:right-8' : 'left-4 sm:left-8';
 
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
@@ -47,7 +47,7 @@ export default function GoToTop() {
           whileTap={{ scale: 0.95 }}
           title={language === 'en' ? 'Go to top' : 'العودة للأعلى'}
           aria-label="Go to top"
-          className={`fixed bottom-8 ${positionClass} z-40 flex h-12 w-12 items-center justify-center rounded-2xl bg-surface-container-highest border border-outline-variant text-primary shadow-lg transition-all duration-300 hover:border-secondary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary group`}
+          className={`fixed bottom-5 sm:bottom-8 ${positionClass} z-40 flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-surface-container-highest border border-outline-variant text-primary shadow-lg transition-all duration-300 hover:border-secondary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary group`}
         >
           <FiArrowUp className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-1" />
         </motion.button>

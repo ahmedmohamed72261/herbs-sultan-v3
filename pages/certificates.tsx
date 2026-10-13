@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import Layout from '@/components/Layout';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '@/store';
@@ -9,7 +9,7 @@ import {
   FiMaximize2, FiDownload, FiFileText, FiLayers,
   FiArrowRight, FiExternalLink
 } from 'react-icons/fi';
-import { FaWhatsapp, FaLeaf, FaMicroscope } from 'react-icons/fa';
+import { FaLeaf, FaMicroscope } from 'react-icons/fa';
 import Link from 'next/link';
 import { useApi } from '@/hooks/useApi';
 
@@ -35,6 +35,8 @@ function Reveal({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
+import localCertificates from '@/data/certificates.json';
+
 const Certificates = () => {
   const { language } = useAppStore();
   const t = translations[language];
@@ -49,76 +51,23 @@ const Certificates = () => {
     }
   }, [certificates.length]);
 
-  const defaultCertificates = [
-    {
-      id: "iso22000",
-      title_en: "ISO 22000:2018",
-      title_ar: "شهادة آيزو 22000:2018",
-      issuer: isEn ? "TÜV Rheinland / Global Standard" : "هيئة المواصفات والجودة الدولية",
-      scope: isEn ? "Farm-to-Container Botanical Supply Chain" : "سلسلة الإمداد من المزرعة حتى شحن الحاويات",
-      validity: "2024 - 2027",
-      description_en: "Food Safety Management System covering our post-harvest handling, automated laser sorting, hygienic dehydration, and ocean container dispatch.",
-      description_ar: "نظام إدارة سلامة الغذاء العالمي المطبق على جميع مراحل التجفيف والفرز الليزري والتعبئة المعزولة للتصدير.",
-      badge: "Food Safety Standard",
-    },
-    {
-      id: "haccp",
-      title_en: "HACCP Certified System",
-      title_ar: "شهادة الهاسب (HACCP)",
-      issuer: isEn ? "International HACCP Alliance" : "التحالف الدولي للتحكم بالمخاطر الغذائية",
-      scope: isEn ? "Critical Control Point Biological Safety" : "نقاط التحكم الحرجة للسلامة البيولوجية",
-      validity: "Active Lot Audited",
-      description_en: "Hazard Analysis Critical Control Point system guaranteeing systematic biological, physical, and chemical purity at every stage of processing.",
-      description_ar: "نظام تحليل المخاطر ونقاط التحكم الحرجة الذي يضمن النقاء البيولوجي والكيميائي لجميع المحاصيل الزراعية.",
-      badge: "Critical Control Points",
-    },
-    {
-      id: "usda",
-      title_en: "USDA National Organic (NOP)",
-      title_ar: "شهادة العضوية الأمريكية USDA",
-      issuer: isEn ? "USDA Accredited Certifying Agent" : "هيئة التوثيق الزراعي العضوي الأمريكية",
-      scope: isEn ? "100% Certified Organic Agricultural Operations" : "عمليات زراعية عضوية معتمدة بالكامل",
-      validity: "Annual Recertification",
-      description_en: "Certified organic cultivation without synthetic fertilizers, chemical insecticides, sewage sludge, or ionizing radiation.",
-      description_ar: "زراعة عضوية معتمدة وفق المعايير الأمريكية بدون أسمدة صناعية أو مبيدات كيميائية أو إشعاع تأين.",
-      badge: "Organic Certified",
-    },
-    {
-      id: "eu-organic",
-      title_en: "EU Organic Standard",
-      title_ar: "شهادة العضوية الأوروبية EU",
-      issuer: isEn ? "CERES / CCPB Inspection Bodies" : "هيئة التفتيش العضوي للاتحاد الأوروبي",
-      scope: isEn ? "Regulation (EU) 2018/848 Export Compliance" : "مطابقة لائحة الاتحاد الأوروبي 2018/848",
-      validity: "Full Annual Audit",
-      description_en: "Full compliance with strict European Union organic production rules, farm origin logs, and lot traceability from Egyptian soil.",
-      description_ar: "مطابقة تامة للائحة الاتحاد الأوروبي للإنتاج العضوي مع سجلات تتبع كاملة لكل مزرعة وتشغيلة.",
-      badge: "EU Compliant",
-    },
-    {
-      id: "fda",
-      title_en: "US FDA Registered Facility",
-      title_ar: "تسجيل هيئة الغذاء والدواء الأمريكية FDA",
-      issuer: isEn ? "U.S. Food & Drug Administration" : "إدارة الغذاء والدواء الأمريكية",
-      scope: isEn ? "Food Facility Registration #19482091" : "منشأة تصدير أغذية مسجلة",
-      validity: "Biannual Biennial Renewal",
-      description_en: "Registered and audited export processing facility compliant with U.S. Bioterrorism Act and Food Safety Modernization Act (FSMA).",
-      description_ar: "منشأة تصدير مسجلة ومطابقة لاشتراطات قانون تحديث سلامة الغذاء الأمريكي (FSMA).",
-      badge: "FDA Registered",
-    },
-    {
-      id: "halal",
-      title_en: "Halal Authority Certified",
-      title_ar: "شهادة حلال الدولية",
-      issuer: isEn ? "World Halal Authority (WHA)" : "الهيئة العالمية للحلال",
-      scope: isEn ? "Universal Islamic Sharia Compliance" : "مطابقة تامة للشريعة الإسلامية",
-      validity: "Active & Verified",
-      description_en: "Strict adherence to Islamic dietary and processing laws across all botanical crop sorting, storage, and container stuffing.",
-      description_ar: "مطابقة تامة لمتطلبات الشريعة الإسلامية في جميع عمليات الحصاد والتجهيز والتعبئة.",
-      badge: "Halal Authority",
-    }
-  ];
-
-  const displayedCertificates = certificates.length > 0 ? certificates : defaultCertificates;
+  const displayedCertificates = useMemo(() => {
+    return (localCertificates as any[]).map((cert) => {
+      const apiMatch = certificates.find((c) => c.id === cert.id || c.title_en === cert.title_en) as any;
+      return {
+        ...cert,
+        ...apiMatch,
+        // Always guarantee the high-res .jpg image from /images/certificates/
+        image: cert.image || apiMatch?.image || '/images/certificates/iso-9001.jpg',
+        icon: cert.icon || apiMatch?.icon,
+        title_en: cert.title_en || apiMatch?.title_en,
+        title_ar: cert.title_ar || apiMatch?.title_ar,
+        scope: isEn ? (cert.scope_en || apiMatch?.scope_en || apiMatch?.scope) : (cert.scope_ar || apiMatch?.scope_ar || apiMatch?.scope),
+        issuer: isEn ? (cert.issuer_en || apiMatch?.issuer_en || apiMatch?.issuer) : (cert.issuer_ar || apiMatch?.issuer_ar || apiMatch?.issuer),
+        validity: cert.validity || apiMatch?.validity || "Active & Verified",
+      };
+    });
+  }, [certificates, isEn]);
 
   const labTestingProtocols = [
     {
@@ -262,15 +211,15 @@ const Certificates = () => {
           <Reveal className="text-center mb-16">
             <span className="inline-flex items-center gap-2 font-label-sm text-[11px] tracking-widest text-secondary uppercase mb-3 font-bold">
               <FiAward className="w-4 h-4" />
-              {isEn ? "Official Accreditations" : "الشهادات والاعتمادات الرسمية"}
+              {isEn ? "Export Quality Accreditations" : "شهادات اعتماد الجودة التصديرية"}
             </span>
             <h2 className="font-headline-lg text-[36px] md:text-[50px] font-bold text-primary tracking-tight">
-              {isEn ? "Certified to Supply the World's Most Demanding Markets" : "معتمدة لتوريد كبرى الشركات العالمية"}
+              {isEn ? "Certified Standards Verifying Our Export Crops" : "شهادات دولية توثق جودة محاصيلنا للتصدير"}
             </h2>
             <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface-variant max-w-2xl mx-auto mt-4">
               {isEn
-                ? "Click any certificate card to inspect auditing scopes, issuing accreditation bodies, and compliance terms."
-                : "انقر على أي شهادة للاطلاع على نطاق التفتيش، والجهة المانحة، وتفاصيل المطابقة الفنية."}
+                ? "These international standards verify that all our exported herbs, spices, seeds, and legumes comply with rigorous global food safety, organic, and phytosanitary rules."
+                : "توثق هذه الشهادات العالمية مطابقة كافة محاصيلنا المصدرة من الأعشاب والبهارات والبذور والبقوليات لأدق معايير الجودة وسلامة الغذاء والزراعة العضوية."}
             </p>
           </Reveal>
 
@@ -283,23 +232,37 @@ const Certificates = () => {
                 <Reveal key={cert.id || idx} delay={idx * 0.08}>
                   <div
                     onClick={() => setActiveCertModal(cert)}
-                    className="group cursor-pointer rounded-[36px] p-8 sm:p-10 bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-white/60 dark:border-white/10 hover:border-secondary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full relative"
+                    className="group cursor-pointer rounded-[32px] p-6 sm:p-7 bg-white/80 dark:bg-white/5 backdrop-blur-2xl border border-white/60 dark:border-white/10 hover:border-secondary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full relative"
                   >
                     <div>
-                      <div className="flex items-center justify-between mb-6">
-                        <div className="w-16 h-16 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center font-bold text-2xl shadow-inner group-hover:bg-secondary group-hover:text-white transition-colors">
-                          <FiAward />
+                      {/* Certificate Document Photo Preview */}
+                      <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 bg-[#04100A] border border-outline-variant/30 group-hover:border-secondary/50 shadow-md">
+                        <img
+                          src={cert.image || "/images/certificates/iso-9001.jpg"}
+                          alt={certTitle}
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = "/images/certificates/iso-9001.jpg";
+                          }}
+                          className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-700 ease-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                        
+                        <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider text-white shadow-md">
+                          {cert.badge || "Verified Standard"}
                         </div>
-                        <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container text-on-surface-variant">
-                          {cert.badge || "Verified"}
-                        </span>
+
+                        {cert.icon && (
+                          <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl bg-white/95 backdrop-blur-md p-1.5 shadow-md flex items-center justify-center">
+                            <img src={cert.icon} alt="" className="w-full h-full object-contain" />
+                          </div>
+                        )}
                       </div>
 
-                      <h3 className="font-headline-sm text-[24px] font-bold text-primary mb-3 group-hover:text-secondary transition-colors">
+                      <h3 className="font-headline-sm text-[22px] font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
                         {certTitle}
                       </h3>
 
-                      <p className="font-body-sm text-[14px] text-on-surface-variant leading-relaxed line-clamp-3 mb-6">
+                      <p className="font-body-sm text-[13px] text-on-surface-variant leading-relaxed line-clamp-2 mb-6">
                         {certDesc}
                       </p>
                     </div>
@@ -394,15 +357,37 @@ const Certificates = () => {
                 <FiX className="w-5 h-5" />
               </button>
 
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center text-3xl font-bold">
-                  <FiAward />
+              {/* Certificate Image Preview */}
+              <div className="relative aspect-[16/9] sm:aspect-[21/9] rounded-2xl overflow-hidden mb-6 bg-[#04100A] border border-outline-variant/30 shadow-lg mt-4">
+                <img
+                  src={activeCertModal.image || "/images/certificates/iso-9001.jpg"}
+                  alt={isEn ? (activeCertModal.title_en || activeCertModal.title) : (activeCertModal.title_ar || activeCertModal.title)}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/images/certificates/iso-9001.jpg";
+                  }}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 left-3 px-3.5 py-1 rounded-full bg-emerald-500/25 border border-emerald-400/40 backdrop-blur-md text-emerald-300 text-xs font-bold uppercase">
+                  ✓ {activeCertModal.badge || "Certified Export Standard"}
                 </div>
+              </div>
+
+              <div className="flex items-center gap-4 mb-6">
+                {activeCertModal.icon ? (
+                  <div className="w-14 h-14 rounded-2xl bg-white/95 p-2 border border-outline-variant/30 flex items-center justify-center shrink-0 shadow-md">
+                    <img src={activeCertModal.icon} alt="" className="w-full h-full object-contain" />
+                  </div>
+                ) : (
+                  <div className="w-14 h-14 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center text-2xl font-bold shrink-0">
+                    <FiAward />
+                  </div>
+                )}
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-secondary">
                     {activeCertModal.badge || "Verified Quality Standard"}
                   </span>
-                  <h3 className="font-headline-sm text-[26px] font-bold text-primary">
+                  <h3 className="font-headline-sm text-[24px] sm:text-[26px] font-bold text-primary">
                     {isEn ? (activeCertModal.title_en || activeCertModal.title) : (activeCertModal.title_ar || activeCertModal.title)}
                   </h3>
                 </div>
@@ -444,15 +429,14 @@ const Certificates = () => {
                 >
                   {isEn ? "Close" : "إغلاق"}
                 </button>
-                <a
-                  href={`https://wa.me/201278201346?text=${encodeURIComponent(`Hello Green Globe Herbs, I would like to request an official copy of your ${activeCertModal.title_en || activeCertModal.title} certificate.`)}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-6 py-2.5 rounded-full bg-[#25D366] text-white text-xs font-bold flex items-center gap-2 hover:bg-[#128C7E] transition-all shadow-md"
+                <Link
+                  href="/products"
+                  onClick={() => setActiveCertModal(null)}
+                  className="px-6 py-2.5 rounded-full bg-primary text-white text-xs font-bold flex items-center gap-2 hover:bg-secondary transition-all shadow-md"
                 >
-                  <FaWhatsapp className="w-3.5 h-3.5" />
-                  <span>{isEn ? "Request Official Copy" : "طلب نسخة معتمدة"}</span>
-                </a>
+                  <span>{isEn ? "View Certified Products" : "تصفح المنتجات المعتمدة"}</span>
+                  <FiArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -460,39 +444,36 @@ const Certificates = () => {
       </AnimatePresence>
 
       {/* ══════════════════════════════════════════════════════
-          §5  REQUEST QA AUDIT DOSSIER & COA SAMPLES
+          §5  EXPORT CATALOG & CERTIFIED PRODUCT SOURCING
       ════════════════════════════════════════════════════ */}
       <section className={`relative py-24 bg-surface-container/60 border-t border-outline-variant/30 ${isEn ? "" : "rtl"}`}>
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12 text-center">
           <div className="rounded-[40px] bg-gradient-to-br from-white/90 to-surface-container/70 dark:from-white/10 dark:to-white/5 backdrop-blur-2xl border border-white/60 dark:border-white/10 p-12 lg:p-16 shadow-2xl">
             <span className="font-label-sm text-[11px] font-bold tracking-widest text-secondary uppercase mb-4 block">
-              {isEn ? "Corporate Quality Assurance Verification" : "فحص الجودة لكبار المستوردين والشركات"}
+              {isEn ? "Certified Egyptian Botanical Crops" : "محاصيل زراعية مصرية معتمدة دولياً"}
             </span>
             <h2 className="font-headline-lg text-[32px] sm:text-[46px] font-bold text-primary tracking-tight mb-6">
-              {isEn ? "Need a Batch Certificate of Analysis (COA) or Lab Sample?" : "هل تحتاج شهادة تحليل COA للتشغيلة الحالية أو عينات للفحص؟"}
+              {isEn ? "Certified Organic Crops for Bulk Global Export" : "محاصيل عضوية معتمدة للتصدير البحري لكافة الأسواق العالمية"}
             </h2>
             <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
               {isEn
-                ? "Our QA laboratory can dispatch certified batch samples and recent Eurofins/SGS chemical reports directly to your quality department via DHL express."
-                : "يقوم معمل مراقبة الجودة لدينا بإرسال عينات من التشغيلات الحالية مع تقارير الفحص الكيميائي والميكروبي المعتمدة مباشرة إلى شركتكم عبر DHL السريع."}
+                ? "All our export crops — herbs, spices, seeds, and legumes — are grown under Nile agricultural supervision and processed in facilities certified by ISO 22000, HACCP, USDA Organic, and EU Organic standards."
+                : "تزرع كافة محاصيلنا التصديرية من الأعشاب والبهارات والبذور والبقوليات تحت إشراف زراعي مباشر في حوض النيل ومجهزة في محطات حاصلة على شهادات الآيزو والهاسب والعضوية الدولية."}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
-                href="/contact"
+                href="/products"
                 className="btn-shine inline-flex items-center justify-center gap-3 px-9 py-4 rounded-full bg-primary text-white font-label-sm text-[13px] font-bold uppercase tracking-widest hover:bg-secondary transition-all shadow-xl"
               >
-                <span>{isEn ? "Request Audit Dossier" : "طلب ملف التوثيق الشامل"}</span>
-                <FiArrowRight className="w-4 h-4" />
+                <span>{isEn ? "Browse Export Products" : "تصفح المنتجات التصديرية"}</span>
+                <FiArrowRight className="w-4 h-4 rtl:rotate-180" />
               </Link>
-              <a
-                href="https://wa.me/201278201346?text=Hello%20Green%20Globe%20Herbs,%20I%20would%20like%20to%20request%20batch%20COA%20samples%20and%20lab%20reports."
-                target="_blank"
-                rel="noreferrer"
-                className="whatsapp-glow inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25D366] text-white font-label-sm text-[13px] font-bold uppercase tracking-widest transition-all shadow-md"
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full border border-primary/30 bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-[13px] font-bold uppercase tracking-widest transition-all"
               >
-                <FaWhatsapp className="w-5 h-5" />
-                <span>{isEn ? "WhatsApp QA Desk" : "مكتب مراقبة الجودة"}</span>
-              </a>
+                <span>{isEn ? "Inquire for Bulk Export" : "طلب تسعير للتصدير"}</span>
+              </Link>
             </div>
           </div>
         </div>
