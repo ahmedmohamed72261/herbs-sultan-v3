@@ -81,13 +81,19 @@ const Products = () => {
 
   const handleCategoryClick = useCallback(
     (slugOrId: string | null) => {
-      if (slugOrId) {
-        const category = categories.find((c) => c.slug === slugOrId || c.id.toString() === slugOrId);
-        const slug = category?.slug || slugOrId;
-        router.push(`/products?category=${slug}`, undefined, { shallow: true });
-      } else {
-        router.push("/products", undefined, { shallow: true });
-      }
+      setLoadingProducts(true);
+      setTimeout(() => {
+        if (slugOrId) {
+          const category = categories.find((c) => c.slug === slugOrId || c.id.toString() === slugOrId);
+          const slug = category?.slug || slugOrId;
+          setSelectedCategory(slug);
+          router.push(`/products?category=${slug}`, undefined, { shallow: true });
+        } else {
+          setSelectedCategory(null);
+          router.push("/products", undefined, { shallow: true });
+        }
+        setLoadingProducts(false);
+      }, 220);
     },
     [router, categories]
   );
