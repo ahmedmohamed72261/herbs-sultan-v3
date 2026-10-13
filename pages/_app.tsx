@@ -14,33 +14,14 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
-  // Initial website load + page transition animation
+  // Initial website load ONLY (never on filtering products or query changes)
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1100);
+    }, 1000);
 
-    const handleRouteChangeStart = (url: string) => {
-      if (url !== router.asPath) {
-        setLoading(true);
-      }
-    };
-    const handleRouteChangeEnd = () => {
-      // Smooth fade out after page loads
-      setTimeout(() => setLoading(false), 250);
-    };
-
-    router.events.on('routeChangeStart', handleRouteChangeStart);
-    router.events.on('routeChangeComplete', handleRouteChangeEnd);
-    router.events.on('routeChangeError', handleRouteChangeEnd);
-
-    return () => {
-      clearTimeout(timer);
-      router.events.off('routeChangeStart', handleRouteChangeStart);
-      router.events.off('routeChangeComplete', handleRouteChangeEnd);
-      router.events.off('routeChangeError', handleRouteChangeEnd);
-    };
-  }, [router]);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (theme === 'dark') {

@@ -65,10 +65,7 @@ const Products = () => {
     if (categories.length === 0) fetchCategories();
   }, [categories.length]);
 
-  const fetchProducts = useCallback(async () => {
-    setLoadingProducts(true);
-    // Smooth micro-transition so the user sees the section loading state while filtering
-    await new Promise((resolve) => setTimeout(resolve, 260));
+  const fetchProducts = useCallback(() => {
     const filtered = selectedCategory
       ? fallbackBotanicals.filter(
           (p) => p.category?.slug === selectedCategory || p.category?.id?.toString() === selectedCategory
@@ -84,7 +81,6 @@ const Products = () => {
 
   const handleCategoryClick = useCallback(
     (slugOrId: string | null) => {
-      setLoadingProducts(true);
       if (slugOrId) {
         const category = categories.find((c) => c.slug === slugOrId || c.id.toString() === slugOrId);
         const slug = category?.slug || slugOrId;
