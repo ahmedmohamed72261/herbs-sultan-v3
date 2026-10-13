@@ -17,9 +17,9 @@ import localProducts from "@/data/products.json";
 function Orb({ className }: { className: string }) {
   return (
     <motion.div
-      className={`absolute rounded-full blur-[80px] pointer-events-none ${className}`}
-      animate={{ scale: [1, 1.2, 1], opacity: [0.35, 0.6, 0.35] }}
-      transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      className={`absolute rounded-full blur-[80px] pointer-events-none select-none max-w-full ${className}`}
+      animate={{ opacity: [0.35, 0.6, 0.35] }}
+      transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
     />
   );
 }

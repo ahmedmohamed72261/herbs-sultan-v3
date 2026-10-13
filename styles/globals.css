@@ -250,6 +250,14 @@ html[dir="rtl"] {
   direction: ltr;
 }
 
+/* Prevent horizontal overflow sway & vibration on mobile */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  touch-action: pan-y;
+}
+
 /* Modern Glass Card */
 .glass-panel {
   background: rgba(255, 255, 255, 0.72);

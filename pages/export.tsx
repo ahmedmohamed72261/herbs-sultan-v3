@@ -13,9 +13,9 @@ import Link from 'next/link';
 function Orb({ className }: { className: string }) {
   return (
     <motion.div
-      className={`absolute rounded-full blur-[100px] pointer-events-none ${className}`}
-      animate={{ scale: [1, 1.18, 1], opacity: [0.3, 0.6, 0.3] }}
-      transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+      className={`absolute rounded-full blur-[100px] pointer-events-none select-none max-w-full ${className}`}
+      animate={{ opacity: [0.3, 0.6, 0.3] }}
+      transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
     />
   );
 }

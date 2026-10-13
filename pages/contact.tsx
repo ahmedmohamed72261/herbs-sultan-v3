@@ -15,9 +15,9 @@ import { useApi } from '@/hooks/useApi';
 function Orb({ className }: { className: string }) {
   return (
     <motion.div
-      className={`absolute rounded-full blur-[100px] pointer-events-none ${className}`}
-      animate={{ scale: [1, 1.18, 1], opacity: [0.35, 0.65, 0.35] }}
-      transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+      className={`absolute rounded-full blur-[100px] pointer-events-none select-none max-w-full ${className}`}
+      animate={{ opacity: [0.35, 0.65, 0.35] }}
+      transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
     />
   );
 }
