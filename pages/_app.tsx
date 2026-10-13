@@ -1,16 +1,46 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { AnimatePresence, motion } from 'motion/react';
 import { Toaster } from 'react-hot-toast';
 import { useAppStore } from '@/store';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { ApiProvider } from '@/context/ApiContext';
+import AppLoading from '@/components/AppLoading';
 
 export default function App({ Component, pageProps }: AppProps) {
   const { theme, language } = useAppStore();
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  // Initial website load + page transition animation
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1100);
+
+    const handleRouteChangeStart = (url: string) => {
+      if (url !== router.asPath) {
+        setLoading(true);
+      }
+    };
+    const handleRouteChangeEnd = () => {
+      // Smooth fade out after page loads
+      setTimeout(() => setLoading(false), 250);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChangeStart);
+    router.events.on('routeChangeComplete', handleRouteChangeEnd);
+    router.events.on('routeChangeError', handleRouteChangeEnd);
+
+    return () => {
+      clearTimeout(timer);
+      router.events.off('routeChangeStart', handleRouteChangeStart);
+      router.events.off('routeChangeComplete', handleRouteChangeEnd);
+      router.events.off('routeChangeError', handleRouteChangeEnd);
+    };
+  }, [router]);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -27,6 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ApiProvider>
+      <AppLoading show={loading} />
       <ErrorBoundary>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
