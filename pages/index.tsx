@@ -319,7 +319,10 @@ export default function Home() {
     <Layout title={t.home.heroTitle}>
 
       {/* §1 HERO */}
-      <section className={`relative min-h-[100svh] flex items-center overflow-hidden bg-[#04100A] text-white ${isEn ? "" : "rtl"}`}>
+      <section
+        dir={isEn ? "ltr" : "rtl"}
+        className={`relative min-h-[100svh] flex items-center overflow-hidden bg-[#04100A] text-white ${isEn ? "" : "rtl"}`}
+      >
 
         {/* ── Ambient background layers ── */}
         <div className="absolute inset-0 pointer-events-none z-0">
@@ -334,24 +337,32 @@ export default function Home() {
 
         {/* ── Main container ── */}
         <div className="relative z-10 w-full max-w-[1360px] mx-auto px-5 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-24 pb-16 lg:pb-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center min-h-[calc(100svh-80px)]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-10 items-center min-h-[calc(100svh-80px)]">
 
-            {/* ══ LEFT: Text content ══ */}
-            <div className={`flex flex-col ${isEn ? "items-start text-left" : "items-end text-right"} order-2 lg:order-1`}>
+            {/* ══ COLUMN 1: Text content (Always order-1 so data is first on mobile) ══ */}
+            <div className={`flex flex-col items-start ${isEn ? "text-left" : "text-right"} order-1 w-full`}>
 
               {/* Live badge */}
               <motion.div
                 initial={{ opacity: 0, y: -12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/25 backdrop-blur-md mb-7 ring-1 ring-emerald-400/10"
+                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/25 backdrop-blur-md mb-6 ring-1 ring-emerald-400/10"
               >
-                <span className="relative flex h-2.5 w-2.5">
+                <span className="relative flex h-2.5 w-2.5 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#25D366]" />
                 </span>
-                <span className="font-bold text-[11px] tracking-[0.22em] uppercase text-emerald-300">
-                  {isEn ? "Nile Harvest 2026/2027 · Bulk Export Active" : "محصول وادي النيل 2026/2027 · تصدير الجملة متاح"}
+                <span className="font-bold text-[11px] uppercase text-emerald-300">
+                  {isEn ? (
+                    "Nile Harvest 2026/2027 · Bulk Export Active"
+                  ) : (
+                    <>
+                      <span>محصول وادي النيل</span>{" "}
+                      <bdi className="font-mono text-emerald-200">2026/2027</bdi>{" "}
+                      <span>· تصدير الجملة متاح</span>
+                    </>
+                  )}
                 </span>
               </motion.div>
 
@@ -360,8 +371,8 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="font-extrabold tracking-tight leading-[1.06] mb-6 text-white"
-                style={{ fontSize: "clamp(36px, 5.5vw, 72px)" }}
+                className="font-extrabold tracking-tight leading-[1.12] mb-6 text-white w-full"
+                style={{ fontSize: "clamp(34px, 5.2vw, 70px)" }}
               >
                 {isEn ? (
                   <>
@@ -386,8 +397,19 @@ export default function Home() {
                 ) : (
                   <>
                     أجود الأعشاب<br />
-                    <span className="bg-gradient-to-r from-emerald-300 via-green-200 to-[#a5d6a7] bg-clip-text text-transparent">
-                      العضوية المصرية
+                    <span className="relative inline-block">
+                      <span className="bg-gradient-to-l from-emerald-300 via-green-200 to-[#a5d6a7] bg-clip-text text-transparent">
+                        العضوية المصرية
+                      </span>
+                      <svg className="absolute -bottom-1 right-0 w-full" viewBox="0 0 300 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M298 6 Q225 2 150 5 Q75 8 2 4" stroke="url(#heroUnderlineAr)" strokeWidth="3" strokeLinecap="round" />
+                        <defs>
+                          <linearGradient id="heroUnderlineAr" x1="300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#4caf50" />
+                            <stop offset="1" stopColor="#25D366" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
                     </span>
                     <br />
                     <span className="text-white/90">للأسواق العالمية</span>
@@ -400,11 +422,11 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.25 }}
-                className="text-white/65 text-[16px] sm:text-[17px] leading-relaxed max-w-[520px] mb-7"
+                className="text-white/70 text-[16px] sm:text-[17px] leading-relaxed max-w-[540px] mb-7"
               >
                 {isEn
                   ? "Premium export-grade herbs, spices & seeds grown in the fertile Nile basin. ISO 22000 certified, GC-MS tested, shipped worldwide from Egypt."
-                  : "أعشاب وبهارات وبذور عضوية فاخرة تُزرع في حوض النيل الخصب. معتمدة ISO 22000، مُحللة بـ GC-MS، وتُصدَّر لكل أنحاء العالم."}
+                  : "أعشاب وتوابل وبذور عضوية نقية تُزرع في حوض النيل الخصب. حاصلة على اعتمادات ISO 22000 و HACCP، ومفحوصة مخبرياً بـ GC-MS، نشحنها بحراً وجواً لكافة موانئ العالم."}
               </motion.p>
 
               {/* Cert chips */}
@@ -412,12 +434,18 @@ export default function Home() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.35 }}
-                className="flex flex-wrap gap-2 mb-9"
+                className="flex flex-wrap items-center gap-2 mb-8"
               >
-                {["ISO 22000 & HACCP", "USDA & EU Organic", "GC-MS Verified"].map((chip) => (
-                  <div key={chip} className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/[0.07] border border-white/[0.12] backdrop-blur-md text-[12px] font-semibold text-white/80">
+                {(isEn
+                  ? ["ISO 22000 & HACCP", "USDA & EU Organic", "GC-MS Verified"]
+                  : ["معتمد ISO 22000 & HACCP", "عضوي USDA & EU", "فحص مخبري GC-MS"]
+                ).map((chip) => (
+                  <div
+                    key={chip}
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.07] border border-white/[0.12] backdrop-blur-md text-[12px] font-semibold text-white/85"
+                  >
                     <FiCheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                    {chip}
+                    <span>{chip}</span>
                   </div>
                 ))}
               </motion.div>
@@ -427,21 +455,21 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.45 }}
-                className="flex flex-wrap items-center gap-3 mb-12"
+                className="flex flex-wrap items-center gap-3.5 mb-10 w-full sm:w-auto"
               >
                 <a
-                  href={`https://wa.me/201278201346?text=${encodeURIComponent("Hello GREEN HERBS EG, I would like to inquire about your bulk export botanical catalog.")}`}
+                  href={`https://wa.me/201278201346?text=${encodeURIComponent(isEn ? "Hello GREEN HERBS EG, I would like to inquire about your bulk export botanical catalog." : "مرحباً جرين هيربس إيجيبت، أود الاستفسار عن كتالوج التصدير وعروض الأسعار.")}`}
                   target="_blank" rel="noreferrer"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bc5b] text-white font-bold text-[13px] uppercase tracking-wider transition-all shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bc5b] text-white font-bold text-[13px] uppercase tracking-wider transition-all shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] hover:-translate-y-0.5"
                 >
-                  <FaWhatsapp className="w-5 h-5" />
-                  {isEn ? "WhatsApp Us" : "واتساب"}
+                  <FaWhatsapp className="w-5 h-5 shrink-0" />
+                  <span>{isEn ? "WhatsApp Us" : "تواصل عبر واتساب"}</span>
                 </a>
                 <Link href="/products"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full border border-white/20 bg-white/[0.07] backdrop-blur-md hover:bg-white/[0.14] text-white font-bold text-[13px] uppercase tracking-wider transition-all hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full border border-white/20 bg-white/[0.07] backdrop-blur-md hover:bg-white/[0.14] text-white font-bold text-[13px] uppercase tracking-wider transition-all hover:-translate-y-0.5"
                 >
-                  {isEn ? "Browse Catalog" : "تصفح الكتالوج"}
-                  <FiArrowRight className="w-4 h-4" />
+                  <span>{isEn ? "Browse Catalog" : "تصفح الكتالوج"}</span>
+                  <FiArrowRight className="w-4 h-4 shrink-0 rtl:rotate-180" />
                 </Link>
               </motion.div>
 
@@ -450,23 +478,27 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.55 }}
-                className={`flex items-center gap-6 sm:gap-8 pt-6 border-t border-white/[0.1] ${isEn ? "" : "flex-row-reverse"}`}
+                className="flex items-center gap-6 sm:gap-9 pt-6 border-t border-white/[0.1] w-full"
               >
                 {[
-                  { value: "25+", label: isEn ? "Years" : "عاماً" },
-                  { value: "50+", label: isEn ? "Markets" : "سوقاً" },
-                  { value: "51+", label: isEn ? "Varieties" : "صنفاً" },
+                  { value: "25+", label: isEn ? "Years Experience" : "عاماً من الخبرة" },
+                  { value: "50+", label: isEn ? "Export Markets" : "سوقاً دولياً" },
+                  { value: "51+", label: isEn ? "Botanical Varieties" : "صنفاً معتمداً" },
                 ].map((s) => (
-                  <div key={s.label} className={`${isEn ? "text-left" : "text-right"}`}>
-                    <div className="text-[26px] sm:text-[30px] font-extrabold text-white tracking-tight leading-none">{s.value}</div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-emerald-400/80 mt-1">{s.label}</div>
+                  <div key={s.label} className={isEn ? "text-left" : "text-right"}>
+                    <div className="text-[26px] sm:text-[32px] font-extrabold text-white tracking-tight leading-none font-mono">
+                      {s.value}
+                    </div>
+                    <div className="text-[11px] font-bold uppercase text-emerald-400/85 mt-1.5">
+                      {s.label}
+                    </div>
                   </div>
                 ))}
               </motion.div>
             </div>
 
-            {/* ══ RIGHT: Core Export Categories Bento (from /images/category) ══ */}
-            <div className="relative order-1 lg:order-2 w-full max-w-[620px] mx-auto">
+            {/* ══ COLUMN 2: Core Export Categories Bento (Always order-2 so it stays below data on mobile) ══ */}
+            <div className="relative order-2 w-full max-w-[620px] mx-auto">
               {/* Outer Glassmorphic Frame */}
               <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.96 }}
@@ -477,11 +509,11 @@ export default function Home() {
                 {/* Header status bar */}
                 <div className="flex items-center justify-between px-3 py-2 mb-3.5 border-b border-white/[0.08] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white/60">
                   <div className="flex items-center gap-2">
-                    <span className="relative flex h-2 w-2">
+                    <span className="relative flex h-2 w-2 shrink-0">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]" />
                     </span>
-                    <span className="text-emerald-300 font-extrabold tracking-widest">
+                    <span className="text-emerald-300 font-extrabold">
                       {isEn ? "Core Export Categories" : "قطاعات التصدير الرئيسية"}
                     </span>
                   </div>
@@ -546,10 +578,10 @@ export default function Home() {
 
                       {/* Top Pill / Badge */}
                       <div className="relative z-10 flex items-center justify-between w-full">
-                        <span className="px-2.5 py-0.5 rounded-full bg-[#04100A]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-emerald-300 tracking-wider">
+                        <span className="px-2.5 py-0.5 rounded-full bg-[#04100A]/80 backdrop-blur-md border border-white/15 text-[10px] font-bold text-emerald-300">
                           {cat.badge}
                         </span>
-                        <div className="w-7 h-7 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/70 group-hover:text-white group-hover:bg-[#25D366] transition-all group-hover:translate-x-0.5">
+                        <div className="w-7 h-7 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/70 group-hover:text-white group-hover:bg-[#25D366] transition-all group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5">
                           <FiArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                         </div>
                       </div>
@@ -579,19 +611,20 @@ export default function Home() {
                       <FiCheckCircle className="w-5 h-5 text-emerald-400" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-emerald-400">
+                      <div className="text-[10px] font-bold uppercase text-emerald-400">
                         {isEn ? "GC-MS Lab Tested & Purity Guaranteed" : "فحص مخبري كروماتوغرافي GC-MS"}
                       </div>
                       <div className="text-[13px] sm:text-[14px] font-extrabold text-white">
-                        99.8% {isEn ? "Certified Physical & Optical Purity" : "نقاء فيزيائي وخلو من الشوائب"}
+                        <bdi className="font-mono">99.8%</bdi>{" "}
+                        {isEn ? "Certified Physical & Optical Purity" : "نقاء فيزيائي وخلو من الشوائب"}
                       </div>
                     </div>
                   </div>
                   <div className="hidden sm:flex items-center gap-2 shrink-0">
-                    <span className="px-2.5 py-1 rounded-lg bg-white/10 text-white/90 text-[10px] font-bold uppercase tracking-wider">
+                    <span className="px-2.5 py-1 rounded-lg bg-white/10 text-white/90 text-[10px] font-bold uppercase">
                       ISO 22000
                     </span>
-                    <span className="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">
+                    <span className="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase">
                       HACCP
                     </span>
                   </div>
